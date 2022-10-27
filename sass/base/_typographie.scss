@@ -6,10 +6,14 @@ body {
    margin: 0;
    padding: 0;
 }
+h1{
+    font-weight: bold;
+    font-family: "Shrikhand", sans-serif;
+}
 
-h1,h2, h4 {
-    font-family: 'Shrikhand', sans-serif;
-    font-weight: 700;
+h2, h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 1.4em;
     font-style: italic;
 }

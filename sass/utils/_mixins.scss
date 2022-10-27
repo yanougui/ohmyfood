@@ -1,4 +1,91 @@
-  //headeer telephone
+//annimation du menu
+@keyframes menu-annimation {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 0.1;
+
+    }
+}
+//
+ @keyframes rotate {
+    0% {
+        right: 0px;
+        margin-right: -45px;
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        right: 40px;
+        margin-right: -20px;
+        transform: rotate(360deg);
+    }
+} 
+
+ 
+@keyframes translate {
+    0% {
+        margin-right: -45px;
+    }
+
+    100% {
+        margin-right: 0px;
+    }
+}
+
+
+@keyframes cut {
+    0% {
+        width: 250px;
+    }
+
+    100% {
+        width: 190px;
+    }
+}
+ 
+
+@keyframes rotate-out {
+    0% {
+        margin-right: -20px;
+        right: 40px;
+    }
+
+    100% {
+        margin-right: -45px;
+        right: 0px;
+    }
+}
+
+@keyframes translate-out {
+    0% {
+        margin-right: 0px;
+    }
+
+    100% {
+        margin-right: -45px;
+    }
+}
+ 
+
+@keyframes uncut {
+    0% {
+        width: 190px;
+    }
+
+    100% {
+        width: 250px;
+    }
+}
+ 
+
+/*//headeer telephone
 @mixin header-telephone {
        margin: $marge-header;
         background-color: $couleur-blanche;
@@ -25,13 +112,13 @@
         text-align: center;
         margin-left: 0.2em
     
-}
+}*/
  
   
  /**************************************/
  //boutton général
 
- @mixin boutton {
+ /*@mixin boutton {
      background: $couleur-boutton;
      color: $couleur-blanche;
      font-size: 2em;
@@ -168,7 +255,7 @@
 }
   /*les menus*/
    
-    
+    /*
  
  @mixin nom_entree_plat_desser {
     font-size: 0.8em;
@@ -262,14 +349,14 @@
         
     }
     
-}
+}*/
 
 
 
 
 /*les articles*/
 
- @mixin article-ordi {
+ /*@mixin article-ordi {
           display: flex;
         position: relative;
         border-radius: $bordur-contour;
@@ -353,7 +440,7 @@
  }
 /*****************************/
  
-
+/*
    
  @mixin annimation {
      .form {
@@ -414,20 +501,7 @@
 
    /* annimation des menus*/
 
-   @keyframes menu-annimation {
-       from {
-           transform: translateY(300px);
-           opacity: 0;
-           
-         
-       }
-
-       to {
-             transform: translateY(0);
-             opacity: 0.1;
-             
-       }
-   }
+    
 
     
 

@@ -1,11 +1,21 @@
- .haeder{
-      &_btn{
-         &--commande{
-            font-size: 10px;
-            color: yellow;
-         }
-
-      }
+  .form{
+    &_btn{
+        margin: auto;
+            width: fit-content;
+             background: linear-gradient(#ff79da, #9356dc);
+            box-shadow: 0px 5px 15px -10px;
+            border-radius: 30px;
+            padding: 19px;
+            margin-top: 45px;
+            font-size: 20px;
+            border: none;
+            margin-left: 8em;
+            color: #fff;
+    }
+     
+       
+      
+  }
      
     /*
     margin-top: -1.4em;
@@ -58,6 +68,6 @@
       */
 
 
- }
+ 
   
  

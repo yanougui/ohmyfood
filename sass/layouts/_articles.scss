@@ -1,6 +1,7 @@
  .article{
       font-size: 15px;
      margin-top: 20px;
+     background-color: $couleur-fond;
       
     &_titre{
         width: 50%;
@@ -27,44 +28,53 @@
             position: absolute;
             width: 14%;
             height: auto;
-             left: 32em;
-             top: 20px;
+             left: 24em;
+             top: 28px;
+             border-radius: 3px;
              text-align: center;
-            background-color: aqua;
+             font-size: 20px;
+            background-color: #99e2d0;;
             
              
 
          }
          .description {
-            width: 70%;
+            width: 70.6%;
             height: auto;
              margin-bottom: 15px;
-              margin-left: 6em;
-              border: 2px solid;
+              margin-left: 5.5em;
+              border: 2px solid $couleur-fond;
               margin-top: -10px;
               padding: 5px;
-              border-radius: 1px 1px 20px 20px;
+              font-size: 16px;
+              //border-radius: 1px 1px 20px 20px;
+              //background-color: rgb(245, 245, 245);
+              background-color: #fff;
                
               
               position: relative;
               &_titre{
                  width: 70%;
                  height: auto;
-
-                 
+                 padding-left: 10px;
                 position: relative;
                 
               }
-            & i{
+              &_lieu{
+                padding-left: 12px;
+                
+              }
+            .fa-regular{
                  position: absolute;
                  top: 10px;
-                 left: 20em;
+                 left: 29em;
                  right: 0px;
                  cursor: pointer;
                  
             }
-            & i:hover{
-                color: green;
+            .fa-regular:hover{
+                 
+                 color: $premier-couleur;
                 
             }
                
