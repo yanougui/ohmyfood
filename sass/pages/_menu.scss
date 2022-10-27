@@ -1,0 +1,311 @@
+.menu{
+    width: 100%;
+    height: auto;
+    position: relative;
+    & img{
+        width: 70%;
+        height: auto;
+        margin-left: 5em;
+        border-radius: 20px 20px 1px 1px;
+         
+        
+        
+    }
+    &_nom{
+        width: 100%;
+         position: relative;
+        margin-top: -0.8em;
+         
+    }
+    &_description{
+        width: 75%;
+        height: auto;
+        margin-left: 4em;
+        text-align: left;
+         padding: 25px;
+    
+        border-radius: 20px 20px 1px 1px;
+        background-color: $couleur-fond;
+        
+        
+         
+    }
+    &_aime{
+        margin-left: 22em;
+        margin-top: -2em;
+        
+    }
+    .entree{
+        
+        &_nos-entrees{
+            width: 76%;
+             border: 2px solid;
+             border-radius: 20px;
+             padding: 10px;
+             font-size: 15px;
+             position: relative;
+             margin-top: 10px;
+              
+              
+             
+        }
+        & input{
+            margin-left: 27em;
+            margin-top: -1.9em;
+            position: absolute;
+             
+        
+        }
+        
+       
+    }
+    .plat{
+        &_nos-plat{
+                width: 76%;
+                border: 2px solid;
+                border-radius: 20px;
+                padding: 10px;
+                font-size: 15px;
+                position: relative;
+                margin-top: 10px;
+        
+        
+            }
+        
+            & input {
+                margin-left: 27em;
+                margin-top: -1.9em;
+                position: absolute;
+        
+            }
+
+    }
+    .dessert{
+        &_nos-dessert {
+                width: 76%;
+                border: 2px solid;
+                border-radius: 20px;
+                padding: 10px;
+                font-size: 15px;
+                position: relative;
+                margin-top: 10px;
+        
+        
+            }
+        
+            & input {
+                margin-left: 27em;
+                margin-top: -1.9em;
+                position: absolute;
+        
+            }
+
+    }
+}
+
+/*.menu{
+      
+    & img{
+        @include menu-image;
+        @media (max-width:769px) {
+                 width: 720px;
+                 margin-left: 0.2em;
+        
+        
+            }
+        @media (max-width:459px) {
+                @include image-menu_telephone;
+        
+        
+            }
+
+    }
+    .nom {
+        font-size: 0.9em;
+        @media (max-width:769px) {
+                width: 111%; 
+                margin-left: -0.4em;
+            }
+        &_description{
+            @include nom_description_menu;
+        }
+        &_titre {
+            margin-left: 0em;
+            margin-top: 0.5em;
+             font-size: 1.6em;
+            
+         
+         @media (max-width:459px) {
+                margin-left: 0em;
+             } 
+        
+         }
+         & h2{
+            @include nom_menu_h2;
+             
+            @media (max-width:459px) {
+                 @include nom_menu_h2_telephonne;
+                
+            }
+         }
+
+    }
+    .fa-heart{
+         margin-left: 22em;
+         position: absolute;
+         margin-top: -1.6em;
+          /*@media(max-width:459px) {
+          margin-left: 22em;
+         position: absolute;
+          margin-top: -1.6em;
+              }  
+    
+        }*/
+    /*.fa-heart:hover {
+         @include coeur-active;
+             }
+    .entree{
+            transition: .3s;
+            animation: menu-annimation 3s;
+        
+        &_lesEntrees{
+               background-color: $couleur-fond;
+                transition: .3s;
+                animation: menu-annimation 3s;
+                margin-top: $marge-top_menu;
+                margin-bottom: $marge-botom_menu;
+        }
+        &_nos-entrees{
+                transition: .3s;
+                animation: menu-annimation 3s;
+                 
+                .input{
+                    @include input_entree_plat_dessert;
+                }
+                                 & input {
+                                     @include checkebox_ordi;
+                                 }
+                @media (max-width:459px) {
+                   .input{
+                     @include input_entrer_plat_desser_telephone;
+                   }
+                                        & input {
+                                            @include checkebox_telephone;
+                                        }
+                    
+                }
+            
+                .prix {
+                        @include prix_entree_plat_dessert;
+                    }
+                
+                    @include entre_plat_dessert;
+                    @media (max-width:459px) {
+                        @include entree_plat_dessert_telephone;
+                        
+                    }
+                    
+            
+            }
+        }
+        
+    }
+            .plat {
+                 transition: .3s;
+                 animation: menu-annimation 6s;
+                 //background-color: red;
+                          
+                &_leplat {
+                     background-color: $couleur-fond;
+                     transition: .3s;
+                     animation: menu-annimation 6s;
+                     margin-top: $marge-top_menu;
+                     margin-bottom: $marge-botom_menu;
+                    // @include titre_menu_plat_dessert;
+                    
+                     
+                                
+                  }
+                                
+                &_nos-plat {
+                     
+                        transition: .3s;
+                        animation: menu-annimation 6s;
+                        .input {
+                                @include input_entree_plat_dessert;
+                            }
+                             & input{
+                                @include checkebox_ordi;
+                             }
+                        
+                            @media (max-width:459px) {
+                                .input {
+                                    @include input_entrer_plat_desser_telephone;
+                                }
+                                                                 & input {
+                                                                     @include checkebox_telephone;
+                                                                 }
+                        
+                            }
+                         
+                        .prix {
+                             @include prix_entree_plat_dessert;
+                             }
+                             @include entre_plat_dessert;
+                              @media (max-width:459px) {
+                                      @include entree_plat_dessert_telephone;
+                            
+                                     }
+                                
+                         }
+             }
+            .dessert {
+                    font-size: 1em;
+                   // background-color: yellow;
+                                                                
+                     &_les-dessert {
+                         background-color: $couleur-fond;
+                         margin-top: $marge-top_menu;
+                         margin-bottom: $marge-botom_menu;
+                         transition: .3s;
+                         animation: menu-annimation 9s;
+                         // @include titre_menu_plat_dessert;
+                        //@include titre_menu_plat_dessert;
+                                                                
+                                                                
+                         }
+                                                                
+                     &_nos-dessert {
+                         transition: .3s;
+                         animation: menu-annimation 9s;
+                        .input {
+                                @include input_entree_plat_dessert;
+                            }
+                                                         & input {
+                                                             @include checkebox_ordi;
+                                                         }
+                             
+                        
+                            @media (max-width:459px) {
+                                .input {
+                                    @include input_entrer_plat_desser_telephone;
+                                }
+                                                                 & input {
+                                                                     @include checkebox_telephone;
+                                                                 }
+                        
+                            }
+                        .prix {
+                               @include prix_entree_plat_dessert;
+                             }
+                             @include entre_plat_dessert;
+                                 @media (max-width:459px) {
+                                      @include entree_plat_dessert_telephone;
+                            
+                                      }
+                        }
+                    }
+         
+*/
+
+       

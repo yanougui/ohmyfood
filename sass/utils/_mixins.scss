@@ -1,0 +1,452 @@
+  //headeer telephone
+@mixin header-telephone {
+       margin: $marge-header;
+        background-color: $couleur-blanche;
+        font-size: 0.8em;
+        position: relative;
+        margin-left: 1em;
+        width: $width-header;
+        
+}
+@mixin header_logo_tablette {
+     
+    //width: $width-logo_header;
+    width: 98%;
+
+}
+@mixin header_logo_telephone {
+    width: $width-logo_header;
+    
+}
+@mixin header-locaisation_telephone {
+    font-size: 0.6em;
+        width: 99%;
+        margin-top: 1em;
+        text-align: center;
+        margin-left: 0.2em
+    
+}
+ 
+  
+ /**************************************/
+ //boutton général
+
+ @mixin boutton {
+     background: $couleur-boutton;
+     color: $couleur-blanche;
+     font-size: 2em;
+      margin-top: 10em;
+      padding: 1em;
+      margin-left: 0em;
+     cursor: pointer;
+     border-radius: 10em;
+     text-align: center;
+
+     transform: scale(0.3);
+
+     &:hover {
+         transform:scale(0.6);
+       
+     }
+    
+ }
+ //boutton tablette
+
+  @mixin boutton-tablette {
+      font-size: 1em;
+      padding: 0.4em;
+      text-align: center;
+      margin-top: 1em;
+      transform: scale(0.6);
+
+      &:hover {
+          transform: scale(1.10);
+
+      }
+
+  }
+ 
+ //bouton téléphone
+
+ @mixin boutton-telephone {
+     font-size: 1em;
+     padding: 0.4em;
+     text-align: center;
+      transform: scale(0.6);
+
+     &:hover {
+         transform: scale(1.10);
+ 
+     }
+
+ }
+ //la nav bar
+ @mixin nabr-telephone {
+     margin: $marge-header;
+     background-color: $couleur-blanche;
+     font-size: 1em;
+     @include nav-a;
+
+ }
+ @mixin navbar_titre_telephone {
+        margin-right: 16em;
+        font-size: 2.17em;
+        font-family: "Roboto", sans-serif;
+        
+         
+    
+ }
+   @mixin nav-a {
+      text-decoration: none;
+      font-size: 0.6em;
+      padding: 0.5em;
+      text-align: center;
+      border-radius: $bordur-contour;
+      background-color: $couleur-fond;
+
+  } 
+
+
+@mixin nav-bar {
+        margin: $marge-header;
+        background-color: $couleur-fond;
+        padding-bottom: 3em;
+        position: relative;
+        
+    
+}
+@mixin position {
+        text-decoration: none;
+        border: 1px solid $couleur-fond;
+        font-size: 1.9em;
+        padding: 0.9em;
+        color: $couleur-noir ;
+        border-radius: $bordur-contour;
+        background-color: $couleur-fond;
+        box-shadow: $nav-box_shadox;
+        
+}
+  
+ 
+ 
+//le menu page menue
+ 
+@mixin menu-image {
+        width: $width-image;
+        height: $height-image;
+        margin: 1em;
+        margin-top: 0em;
+        border-radius: $border-image;
+        box-shadow: inset 0em 1em $couleur-fond;
+        
+       
+         
+}
+ 
+ @mixin image-menu_telephone {
+     width: $width-image_telephone;
+     height: $height-image_telephone;
+     margin-right: 1em;
+     border-radius: 1px;
+    
+
+
+ }
+@mixin nom_description_menu {
+        width: 88%;
+        border-radius: 20px;
+        margin-top: -2.2em;
+        margin-left: 1em;
+        background-color: $couleur-fond;
+         
+   
+}
+@mixin coeur-active{
+    cursor: pointer;
+    background-color: $couleur-aime;
+    
+}
+  /*les menus*/
+   
+    
+ 
+ @mixin nom_entree_plat_desser {
+    font-size: 0.8em;
+    margin: 1em;
+    
+    
+
+    
+ }
+ @mixin input_entree_plat_dessert {
+        margin-left: 75em;
+        position: absolute;
+        border-radius: 1px 10px 10px 1px;
+        border: 1px solid $couleur-fond;
+        font-weight: bold;
+        padding-top: 0em;
+        padding-right: 2em;
+        margin-top: -0.2em;
+        width: 4%;
+        height: 8.7%;
+        background-color: $colour-verte;
+         
+    
+ }
+ @mixin input_entrer_plat_desser_telephone {
+        margin-left: 21em;
+        width: $width-input;
+        height: $height-input;
+        padding-top: 4.93em;
+        margin-top: -1.1em;
+        border-radius: 1px 10px 10px 1px;
+        border: 1px solid $couleur-fond;
+        font-weight: bold;
+        background-color: $colour-verte;
+         
+    
+ }
+ @mixin entree_plat_dessert_telephone {
+        border: 1px solid $couleur-fond;
+        margin: 2em;
+        padding: 1em;
+        font-size: 0.8em;
+        line-height: 1.5em;
+        border-radius: 10px;
+        background-color: $couleur-blanche;
+        
+        width: 90%;
+        
+    position: relative;
+ }
+ @mixin checkebox_telephone{
+    margin-left: 0.2em;
+    margin-top: -3em;
+      position: absolute;
+     
+ }
+  @mixin checkebox_ordi {
+       
+      margin-top:2em;
+      position: absolute;
+
+  }
+@mixin entre_plat_dessert {
+        margin: 2em;
+        padding: 0.2em;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid $couleur-fond;
+        background-color: $couleur-blanche;
+        
+}
+@mixin nom_menu_h2 {
+    border-bottom: 3px solid $colour-verte;
+    
+    width: 6%;
+    
+}
+@mixin nom_menu_h2_telephonne {
+    width: 22%;
+    border-bottom: 3px solid $colour-verte;
+
+}
+ 
+ 
+@mixin prix_entree_plat_dessert {
+     margin-left: 10em;
+    background-color: yellow;
+    @media (max-width:459px) {
+         margin-left: 0.2em;
+        
+    }
+    
+}
+
+
+
+
+/*les articles*/
+
+ @mixin article-ordi {
+          display: flex;
+        position: relative;
+        border-radius: $bordur-contour;
+        background-color: $couleur-blanche;
+       // animation-direction: alternate;
+        width: 98%;
+        margin-left: 0.2em;
+     
+    
+}
+ 
+   
+
+@mixin article-telephne {
+        display: block;
+        border-radius: $bordur-contour;
+        background-color: $couleur-fond;
+        //animation-direction: alternate;
+        width: 95%;
+        margin-left: 0.1em; 
+    
+    
+}
+
+@mixin article_description {
+        background-color: $couleur-blanche;
+        padding: 0.2em;
+        margin-top: -0.4em;
+        margin-left: 0.1em;
+        border-radius: 1px 1px 10px 10px;
+        width: $width-description_article_telephone;
+        background-color: blue;
+         
+    
+}
+@mixin article_image-img_telephone {
+        margin-left: 0.1em;
+        margin-top: 0.2em;
+        border-radius: $border-image;
+        background-color: $couleur-fond;
+        width: $width-image_telephone;
+    
+}
+@mixin nouveau-ordi {
+         position:absolute;
+        width: 6%;
+        margin-left: 10em;
+        margin-top: 2.5em;
+        padding: 0.2em;
+        background-color: $troisiem-couleur;
+         
+       
+    
+}
+
+
+ @mixin nouveau-telephone {
+     display: flex;
+     position: absolute;
+     width: 23.6%;
+     margin-left: 11.5em;
+     margin-top: 0.6em;
+     padding: 0.2em;
+     background-color: $troisiem-couleur;
+
+ }
+ @mixin coeur {
+        margin-left: 12em;
+        position: absolute;
+        margin-top: -1.2em;
+    
+ }
+ @mixin image-img {
+        width: $width-acceuil_ordi;
+        height: $height-accueil_ordi;
+        margin-left: 0em;
+        margin-top: 2em;
+        border-radius: $border-image;
+        background-color: $couleur-fond;
+     
+ }
+/*****************************/
+ 
+
+   
+ @mixin annimation {
+     .form {
+         border-style: solid;
+         border-width: 1px;
+         display: block;
+         width: 400px;
+         height: 100px;
+         margin-top: -4.3em;
+         background-color: $couleur-fond;
+         transition: width 2s, height 2s, background-color 2s, transform 2s;
+        cursor: pointer;
+         margin-left: 50em;
+         
+
+     }
+
+     .form:hover {
+         background-color: $couleur-fond;
+         width: 400px;
+         height: 200px; 
+         
+         //transform: rotate(360deg);
+     }
+         
+
+        }
+
+
+                  @mixin annimation_tablette {
+                      .form {
+                          border-style: solid;
+                          border-width: 1px;
+                          display: block;
+                          width: 682px;
+                          height: 100px;
+                          margin-top: -1em;
+                          background-color: $couleur-fond;
+                          transition: width 2s, height 2s, background-color 2s, transform 2s;
+                          cursor: pointer;
+                          margin-left: -1em;
+                          display: none;
+                           
+        
+                      }
+        
+                      .form:hover {
+                          background-color: $couleur-fond;
+                          width: 5px;
+                          height: 200px;
+                          //transform: rotate(360deg);
+                         
+                      }
+        
+        
+                  }
+
+
+   /* annimation des menus*/
+
+   @keyframes menu-annimation {
+       from {
+           transform: translateY(300px);
+           opacity: 0;
+           
+         
+       }
+
+       to {
+             transform: translateY(0);
+             opacity: 0.1;
+             
+       }
+   }
+
+    
+
+       
+   
+               /* .btn {
+                    &:active {
+                        &+.progress {
+                            &>.progress__bar {
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+        
+                .progress {
+                    &__bar {
+                        transform-origin: 0% 50%;
+                        transform: scaleX(0);
+                        transition: transform 1000ms cubic-bezier(.32, 0, .07, 1);
+                    }
+                }*/

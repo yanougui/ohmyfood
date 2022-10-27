@@ -1,0 +1,63 @@
+ .haeder{
+      &_btn{
+         &--commande{
+            font-size: 10px;
+            color: yellow;
+         }
+
+      }
+     
+    /*
+    margin-top: -1.4em;
+     
+     
+    
+      
+     &_villes {
+
+         margin: 0.2em;
+         padding: 2em;
+          
+         @include annimation;
+        @media (max-width:769px) {
+                
+                @include annimation_tablette;
+        
+        
+            }
+ 
+
+         & select {
+             margin-left: 2em;
+             padding: 0.3em;
+
+             background-color: $couleur-fond;
+              
+             
+             @media (max-width:459px) {
+                & select{
+                    background-color: $couleur-fond;
+                     
+                     
+                     
+                }
+                
+             }
+
+         }
+              
+
+         & select:hover {
+             background-color: $premier-couleur;
+             cursor: pointer;
+             visibility: visible;
+
+         }
+        
+     }
+      */
+
+
+ }
+  
+ 

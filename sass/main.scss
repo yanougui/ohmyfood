@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@import "./utils/variables.scss";
+@import "./utils/functions.scss";
+@import "./utils/mixins.scss";
+@import "./utils/extensions.scss";
+
+@import "./base/base.scss";
+@import "./base/typographie.scss";
+
+@import "./layouts/header.scss";
+@import "./layouts/nav.scss";
+@import "./layouts/form.scss";
+@import "./layouts/section.scss";
+ 
+@import "./layouts/articles.scss";
+@import "./layouts/footer.scss";
+
+@import "./components/boutton.scss";
+
+@import "./pages/menu.scss";
+@import "./pages/contact.scss";
+
+ 
+
+ 
+
+

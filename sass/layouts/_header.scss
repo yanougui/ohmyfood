@@ -1,0 +1,114 @@
+ 
+   .header{
+      width: 100%;
+      height: auto;
+      position: relative;
+      font-size: 15px;
+      text-align: center;
+      
+      & img{
+          padding: 15px;
+          width: 30%;
+          position: relative;
+          
+         
+      }
+      & i{
+         top: 20px;
+         left: 8em;
+         position: absolute;
+         
+      }
+      
+      
+      /*
+         margin: $marge-header;
+         font-size: 1.2em;
+        // background-color: red;
+         @media (max-width:769px) {
+              // @include header_logo_tablette;
+               
+         
+         
+            }
+         &_logo{
+            text-align: center;
+             @media (max-width:769px) {
+                   @include header_logo_tablette;
+                 background-color: red;
+            
+            
+               
+            @media (max-width:459px) {
+                  @include header_logo_telephone;
+            
+            
+               }
+             
+         }
+          &_localisation {
+             @media (max-width:769px) {
+                 // @include header-locaisation_telephone;
+                  //background-color: red;
+            
+               } 
+         
+              @media (max-width:459px) {
+                     @include header-locaisation_telephone;
+           
+                      }
+         
+                      & i {
+                         width: $width-header;
+                         padding: $paddin-page;
+                         border-top: 1px solid;
+                         background-color: $couleur-fond;
+                         @media (max-width:769px) {
+                               margin-left: -1em;
+                              width: 109%;
+                              //background-color: red;
+                              
+                        
+                           } 
+         
+                        @media (max-width:459px) {
+                            margin-left: -0.2em;
+                            width: 99.97%;
+         
+                         }
+          
+                      }
+                      
+                   }
+                      &_reservation {
+                              margin-top: -1em;
+                              margin-left: 1.3em;
+                              font-size: 1em;
+                              
+                               
+                   
+                              }
+                               &_description {
+                                  padding-left: 1.3em;
+                                  margin-top: -1em;
+                                  font-size: 0.6em;
+                                  
+                                   
+               
+                               }
+                                 & a {
+                                       position: absolute;
+                                        margin-top: -2em;
+                                        margin-left: 0.4em;
+                                 
+                                        }
+                                          .fa-location-dot::before {
+                                                margin-right: 0.3em;
+                                                 
+                                                }
+    
+     */
+      
+   }
+ 
+ 
