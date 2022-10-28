@@ -2,9 +2,10 @@
     width: 100%;
     height: auto;
     background-color: rgb(50 50 50);
-    position: relative;
+    position:relative;
     color: white;
-    margin-top: 30px;
+    margin-top: 0px;
+    font-size: 16px;
     &_logo{
 
           
@@ -37,6 +38,9 @@
         padding-right: 9px;
         
     }
+
+
+  
     /*
     color: $couleur-blanche;
     margin-top: $marge-haut;
@@ -91,4 +95,58 @@
         
      
 }
+
+
+   /*medias queries verstion tablette*/
+   @media only screen and (min-width:992px) {
+       .footer {
+        padding-bottom: 10px;
+        &_logo {
+        
+         padding-left: 46px;
+                
+        
+            }
+        
+            &_menu_restau {
+                padding-left: 46px;
+                 
+        
+            }
+        
+            &_menu_partenaire {
+                padding-left: 46px;
+                 
+        
+            }
+        
+            &_menu_mension {
+                margin-left: 52px;
+                 
+            }
+        
+            &_active {
+                text-decoration: none;
+                margin-left: 52px;
+                 
+                color: #fff;
+                 
+            }
+        
+            .fa-utensils {
+                padding-right: 1em;
+                 
+        
+            }
+        
+            .fa-handshake {
+                padding-right: 9px;
+        
+            }
+         
+ 
+       }
+
+
+   }
   

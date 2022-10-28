@@ -9,13 +9,14 @@
       & img{
           padding: 15px;
           width: 30%;
+           left: 30px;
           position: relative;
           
          
       }
       & i{
          top: 19px;
-         left: 8em;
+         left: 9em;
          position: absolute;
          color: black;
          font-weight: bold;
@@ -116,5 +117,58 @@
      */
       
    }
+   /*les medias queries*/
+        @media only screen and (min-width:763px) {
+           .header{
+            & i {
+                   
+                  left: 16em;
+                   
+            
+            
+               }
+             
+           }
+   
+   
+        }
+   /*medias queris version orditeur*/
+       @media only screen and (min-width:992px) {
+           .header{
+             
+            & img {
+                left: 15px;
+                 
+                /*
+                  padding: 15px;
+                  width: 30%;
+                  left: 28px;
+                  position: relative;*/
+            
+            
+               }
+            
+               & i {
+                  left: 22em;
+                  top: 43px;
+                   
+                  /*
+                  top: 19px;
+                  left: 9em;
+                  position: absolute;
+                  color: black;
+                  font-weight: bold;
+                  width: 6%;
+                  padding: 10px;
+                  */
+            
+            
+               }
+
+           }
+   
+       }
+   
+       
  
  

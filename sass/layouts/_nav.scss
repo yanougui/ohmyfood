@@ -1,13 +1,16 @@
 .nav{
     width: 100%;
     height: auto;
-    margin-top: 4em;
+    margin-top: 10px;
     font-size: 16px;
+     
+     
     
      
      &_titre{
         width: 50%;
-         margin-left: 6em;
+         margin-left: 7.9em;
+          
          
         
      }
@@ -15,8 +18,11 @@
         display: flex;
         flex-direction: column;
         width: 68%;
-         margin-left: 7em;
+         margin-left: 10em;
          position: relative;
+         font-size: 14px;
+         
+         
         
           
         &_position{
@@ -36,7 +42,7 @@
              height: 9%;
              border-radius: $bordur-contour;
              padding: 3px;
-             margin-top: 2.6em;
+             margin-top: 44px;
              margin-left: 20px;
              background-color: $premier-couleur;
              color: #fff;
@@ -50,7 +56,7 @@
              height: 9%;
              border-radius: $bordur-contour;
              padding: 3px;
-             margin-top: 10em;
+             margin-top: 156px;
              margin-left: 20px;
              background-color: $premier-couleur;
              color:#fff;
@@ -62,7 +68,7 @@
             height: 9%;
             border-radius: $bordur-contour;
             padding: 3px;
-            margin-top: 17.4em;
+            margin-top: 19.4em;
             margin-left: 20px;
             background-color: $premier-couleur;
             color:#fff;
@@ -342,6 +348,243 @@
          }
          */
 }
+/*medias queries version tablette*/
+ @media only screen and (min-width:763px) {
+     .nav {
+        margin-top: -10px;
+          
+        &_titre {
+                 
+                margin-left: 10.3em;
+        
+        
+        
+            }
+        
+            .fonction {
+                font-size: 18px;
+                /*
+                display: flex;
+                flex-direction: column;
+                width: 68%;
+                margin-left: 10em;
+                position: relative;
+                font-size: 14px;
+                */
+        
+        
+        
+        
+                &_position {
+                    padding:30px;
+                    /*
+                    width: 77%;
+                    border-radius: $bordur-contour;
+                    padding: 28px;
+                    margin: 17px;
+                    background-color: rgb(235, 235, 235);
+                    box-shadow: 0 15px 10px -10px rgb(207, 205, 207);
+                    */
+                     
+        
+        
+                }
+        
+                .fa-circle-1 {
+                    width: 5%;
+                    height: 9.8%;
+                    /*
+        
+                    position: absolute;
+                    width: 5%;
+                    height: 9.8%;
+                    border-radius: $bordur-contour;
+                    padding: 3px;
+                    margin-top: 44px;
+                    margin-left: 20px;
+                    background-color: $premier-couleur;
+                    color: #fff;
+                    background-color: red;
+                    */
+        
+        
+                }
+        
+                .fa-circle-2 {
+                    width: 5%;
+                    height: 9.8%;
+                    margin-top: 168px;
+                    /*
+        
+                    position: absolute;
+                    width: 6%;
+                    height: 9%;
+                    border-radius: $bordur-contour;
+                    padding: 3px;
+                    margin-top: 156px;
+                    margin-left: 20px;
+                    background-color: $premier-couleur;
+                    color: #fff;
+                    */
+                }
+        
+                .fa-circle-3 {
+                    width: 5%;
+                    height: 9.8%;
+                    margin-top: 16.2em;
+                    /*
+        
+                    position: absolute;
+                    width: 6%;
+                    height: 9%;
+                    border-radius: $bordur-contour;
+                    padding: 3px;
+                    margin-top: 19.4em;
+                    margin-left: 20px;
+                    background-color: $premier-couleur;
+                    color: #fff;
+                    */
+                }
+        /*
+                .fa-duotone {
+                    padding-left: 7px;
+        
+        
+        
+                }
+        
+                .fa-solid {
+                    margin-right: 20px;
+        
+                }
+        
+                & a {
+                    text-decoration: none;
+                    margin-left: 2em;
+                    padding-left: 3em;
+                    font-weight: bold;
+                    color: black;
+        
+                }
+        
+                .fa-solid {
+                    color: gray;
+        
+                }
+        
+                .fa-solid:hover {
+                    color: $premier-couleur;
+        
+                }*/
+        
+            }
+     }
+
+
+ }
+
+
+
+ /*medias queris version orditeur*/
+ @media only screen and (min-width:992px) {
+     .nav {
+         
+&_titre {
+     
+        margin-left: 2.3em;
+         
+
+
+
+    }
+
+    .fonction {
+        font-size: 18px;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+         
+        
+        &_position {
+             
+            width: 30%;
+            height: 99px;
+            padding: 30px;
+             
+          
+
+        }
+
+        .fa-circle-1 {
+            width: 2%;
+            height: 22.4%;
+            margin-top: 52px;
+            padding-top: 0px;
+            left: 5px;
+            position: absolute;
+           
+
+        }
+
+        .fa-circle-2 {
+            width: 2%;
+            height: 22.4%;
+            left: 28.4em;
+            padding-top: 0px;
+            position: absolute;
+            margin-top: 50px;
+          
+        }
+
+        .fa-circle-3 {
+            width: 2%;
+            height: 22.4%;
+            margin-top: 3em;
+            padding-top: 0px;
+            left:56.4em ;
+             
+             
+           
+        }
+
+        /*
+                .fa-duotone {
+                    padding-left: 7px;
+        
+        
+        
+                }
+        
+                .fa-solid {
+                    margin-right: 20px;
+        
+                }
+        
+                & a {
+                    text-decoration: none;
+                    margin-left: 2em;
+                    padding-left: 3em;
+                    font-weight: bold;
+                    color: black;
+        
+                }
+        
+                .fa-solid {
+                    color: gray;
+        
+                }
+        
+                .fa-solid:hover {
+                    color: $premier-couleur;
+        
+                }*/
+
+    }
+
+     }
+
+ }
   
 
  

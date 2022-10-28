@@ -4,11 +4,12 @@
         padding-bottom: 26px;
         position: relative;
         font-size: 15px;
+        top: -29px;
         text-align: center;
         background-color: $couleur-fond;
         box-shadow: inset 0 5px 10px -10px;
          
-         
+       
          
     &_lieu{
             width: 100%;
@@ -27,11 +28,13 @@
             
     }
          & input {
-            width:28%;
+            width:30%;
              border: none;
              text-align: left;
-             font-size: 20px;
+             font-size: 18px;
+             padding-left: 0;
             background-color: rgb(235, 235, 235);
+             
 
             
              
@@ -40,17 +43,21 @@
     
          }
         & i {
-            padding-right: 13px;
+            padding-right: 1px;
+             
     
         }
                  &_reservation {
-                     max-width: 60%;
-                     min-width: 50%;
+                     max-width: 33%;
+                     min-width: 30%;
                      height: auto;
-                     font-size: 34px;
-                     margin-left: 3.9em;
-                     padding-top: 2em;
+                     font-size: 20px;
+                     margin-left: 12em;
+                     padding-top: 60px;
+                     margin-top:40px;
                      line-height: 1.15;
+                      
+                     
                      
                       
                     
@@ -58,17 +65,161 @@
                  }
         
                  &_description {
-                    max-width: 60%;
-                    min-width: 50%;
-                     font-size: 25px;
+                    max-width: 50%;
+                    min-width: 40%;
+                    height: auto;
+                     font-size: 19px;
                       font-weight: 200;
                      line-height: 1.15;
-                     margin-left: 5em;
+                     margin-left: 10em;
                      padding-top: 20px;
+                     
                       
                 
                      
         
                  }
+
+}
+/* version tablette*/
+@media only screen and (min-width:763px) {
+     .localisation {
+         
+        /* &_lieu {
+            
+            //background-color: green;
+                width: 100%;
+                height: 17%;
+                padding-left: 2.3em;
+                text-align: center;
+                position: absolute;
+                margin-top: -1px;
+                padding-top: 11px;
+                background-color: $couleur-fond;
+                background-color: rgb(235, 235, 235);
+                box-shadow: inset 0 5px 10px -10px;
+                // box-shadow:-15px -15px 15px -15px rgb(207, 205, 207);
+                 
+        
+        
+        
+            }
+                        */
+                 & input {
+                    text-align: left;
+                    margin-left: 55px;
+                    padding-left: 20px;
+                     /*width: 30%;
+                     border: none;
+                     text-align: center;
+                     font-size: 18px;
+                     padding-left: 20px;
+                     background-color: rgb(235, 235, 235);*/
+                     
+        
+        
+        
+        
+        
+        
+        
+                 }
+        
+                 & i {
+                    position: absolute;
+                      top: 16px;
+                       left: 26.6em;
+                       
+                      
+        
+        
+                 }
+        
+                 &_reservation {
+                    font-size: 25px;
+                        margin-left: 12em;
+                        padding-top: 60px;
+                        margin-top: 40px;
+                    /*
+                     max-width: 33%;
+                     min-width: 30%;
+                     height: auto;
+                     font-size: 25px;
+                     margin-left: 12em;
+                     padding-top: 60px;
+                     margin-top: 40px;
+                     line-height: 1.15;
+                     background-color: red;
+                     */
+        
+        
+        
+        
+        
+        
+                 }
+        
+                 &_description {
+                     max-width: 45%;
+                    font-size: 20px;
+                    margin-left: 12em;
+/*
+                     min-width: 40%;
+                     height: auto;
+                     font-size: 20px;
+                     font-weight: 200;
+                     line-height: 1.15;
+                     margin-left: 10em;
+                     padding-top: 20px;
+                     */
+                      
+        
+        
+        
+        
+        
+                 }
+     }
+    
+    
+}
+//version tablette
+
+@media only screen and (min-width:992px) {
+    .localisation{
+        margin-top: -5px;
+        &_lieu {
+           height: 20%;
+            
+  
+
+        }
+        & input {
+            text-align: left;
+            margin-left: 50px;
+            padding-left: 20px;
+            font-size: 25px;
+        
+            }
+        
+        & i {
+             top: 19px;
+             left: 38em;
+                   }
+        &_reservation {
+             
+             margin-left: 12em;
+            font-size: 38px;
+                  
+            
+        }
+         &_description {
+             max-width: 45%;
+             font-size: 20px;
+             margin-left: 20em;
+           
+    
+         }
+    }
 
 }
