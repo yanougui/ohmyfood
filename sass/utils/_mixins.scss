@@ -17,14 +17,14 @@
  @keyframes rotate {
     0% {
         right: 0px;
-        margin-right: -45px;
-        transform: rotate(-180deg);
+        margin-right: -40px;
+        transform: rotate(0deg);
     }
 
     100% {
         right: 40px;
-        margin-right: -20px;
-        transform: rotate(360deg);
+        margin-right: -40px;
+        transform: rotate(0deg);
     }
 } 
 
@@ -42,11 +42,11 @@
 
 @keyframes cut {
     0% {
-        width: 250px;
+        width: 240px;
     }
 
     100% {
-        width: 190px;
+        width: 400px;
     }
 }
  
@@ -83,7 +83,7 @@
         width: 250px;
     }
 }
- 
+
 
 /*//headeer telephone
 @mixin header-telephone {

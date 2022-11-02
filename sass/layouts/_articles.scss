@@ -1,11 +1,13 @@
  .article{
+    width: 99%;
       font-size: 15px;
      margin-top: 20px;
      background-color: $couleur-fond;
+     
       
     &_titre{
         width: 50%;
-        margin-left: 6.2em;
+        margin-left: 70px;
       
     }
     .image{
@@ -18,7 +20,7 @@
         & img{
             width: 70%;
             height: auto;
-            margin-left: 7.6em;
+            margin-left: 65px;
             border-radius: 20px 20px 1px 1px;
              
              
@@ -27,7 +29,7 @@
             position: absolute;
             width: auto;
             height: auto;
-            left: 24em;
+            left: 14em;
             top: 28px;
             padding: 5px;
             border-radius: 3px;
@@ -40,7 +42,7 @@
             width: 70.6%;
             height: auto;
             margin-bottom: 15px;
-            margin-left: 7em;
+            margin-left: 64px;
             border: 2px solid $couleur-fond;
             margin-top: -10px;
             padding: 5px;
@@ -49,6 +51,7 @@
               //background-color: rgb(245, 245, 245);
             background-color: #fff;
             position: relative;
+             
              
             &_titre{
                 width: 70%;
@@ -62,7 +65,7 @@
             .fa-regular{
                 position: absolute;
                 top: 10px;
-                left: 27em;
+                left: 16em;
                 right: 0px;
                 cursor: pointer;  
             }
@@ -77,28 +80,33 @@
           
   
 }
+/*
 @media only screen and (max-width:463px) {
     .article {
+          
         &_titre {
             margin-left: 26px;
+             
         }
         .image {
+            
             & img {
                 width: 90%;
                 margin-left: 18px;
             }
     
             &_noveau {
-                left: 11em;
+                left: 11.5em;
             }
     
             .description {
                 width: 91%;
                 margin-left: 1em;
                 border-radius: 1px 1px 20px 20px;
+                
                  
                 .fa-regular {
-                    left: 20em;
+                    left: 15em;
                 }
             }
     
@@ -108,11 +116,14 @@
     
     
 }
+*/
 
     /*medias queries version tablette*/
 
 @media only screen and (min-width:763px) {
-    .article{    
+    .article{   
+        margin-top: 45px;
+          
         &_titre {
             margin-left: 8em;
             }

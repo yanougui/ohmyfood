@@ -5,29 +5,48 @@
      
      
      &_btn{
-            margin: auto;
+            margin: 140px;
             width: fit-content;
             background: linear-gradient(#ff79da, #9356dc);
             box-shadow: 0px 5px 15px -10px;
             border-radius: 30px;
             padding: 15px;
+
             margin-top: 45px;
             font-size: 14px;
             color: #fff;
-    
              
-        /*
-         
-          @include boutton;
-        @media(max-width:459px) {
-                @include boutton-telephone;
-        
-            }
-                         @media(max-width:769px) {
-                             @include boutton-tablette;
-            
-                         }
-                         */
+     
+     }
+     &_btn:hover{
+        background: linear-gradient(#ff79da, #ff79da, #9356dc);
+         box-shadow: 0px 10px 25px -10px;
+        transition: 0.2s;
+        cursor: pointer;
      }
       
+ }
+
+
+@media only screen and (min-width: 763px) {
+    .localisation {
+        position: relative;
+
+        &_btn {
+
+            margin-left: 28em;
+        }
+    }
+
+}
+
+ @media only screen and (min-width: 992px) {
+    .localisation{
+        position: relative;
+        &_btn {
+             
+            margin-left: 44em;
+        }
+    }
+    
  }

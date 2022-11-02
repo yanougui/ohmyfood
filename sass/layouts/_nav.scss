@@ -1,52 +1,56 @@
 .nav{
     width: 100%;
     height: auto;
+    margin-left: 0px;
     margin-top: 10px;
     font-size: 16px;
+    position: relative;
+   
      
      
     
      
     &_titre{
         width: 50%;
-         margin-left: 7.9em;
+         margin-left: 72px;
     }
     .fonction{
         display: flex;
         flex-direction: column;
         width: 68%;
-        margin-left: 10em;
+        margin-left: 46px;
         position: relative;
         font-size: 14px;
         &_position{
-            width: 77%;
+            width: 98%;
             border-radius: $bordur-contour;
             padding: 28px;
-            margin: 17px;
+            margin: 10px;
             background-color: rgb(235, 235, 235);
             box-shadow: 0 15px 10px -10px rgb(207, 205, 207);
+             
                 
         }
         .fa-circle-1{
                 
             position: absolute;
-            width: 6%;
-            height: 9%;
+            width: 9%;
+            height: 10%;
             border-radius: $bordur-contour;
             padding: 3px;
-            margin-top: 44px;
-            margin-left: 20px;
+            margin-top: 35px;
+            margin-left: 18px;
             background-color: $premier-couleur;
             color: #fff;
         }
         .fa-circle-2 {
             
             position: absolute;
-            width: 6%;
-            height: 9%;
+            width: 9%;
+            height: 10%;
             border-radius: $bordur-contour;
             padding: 3px;
-            margin-top: 156px;
+            margin-top: 135px;
             margin-left: 20px;
             background-color: $premier-couleur;
             color:#fff;
@@ -54,17 +58,17 @@
         .fa-circle-3 {
         
             position: absolute;
-            width: 6%;
-            height: 9%;
+            width: 9%;
+            height: 10%;
             border-radius: $bordur-contour;
             padding: 3px;
-            margin-top: 19.4em;
+            margin-top: 17em;
             margin-left: 20px;
             background-color: $premier-couleur;
             color:#fff;
         }
         .fa-duotone{
-            padding-left: 7px;
+            padding-left: 10px;
         }
         .fa-solid{
             margin-right: 20px;
@@ -87,6 +91,7 @@
 
      
 }
+/*
 @media only screen and (max-width:463px) {
     .nav {
         &_titre {
@@ -123,38 +128,58 @@
 
     }
 }
+*/
 
 /*medias queries version tablette*/
  @media only screen and (min-width:763px) {
      .nav {
+        width: 100%;
+         height: 30em;
         margin-top: -10px;
+         
           
         &_titre {
-            margin-left: 10.3em;
+            margin-left: 8em;
         }
         
         .fonction {
+            width: 86%;
+            
             font-size: 18px;
+            margin-left: 129px;
             &_position {
+                width: 48%;
                 padding:30px;
+                margin-top: -1px;
+                margin: 25px;
+                 
+                 
             }
         
             .fa-circle-1 {
-                width: 5%;
-                height: 9.8%;
+                width: 4%;
+                height: 8.5%;
+                margin-left: 23px;
+                margin-top: 54px;
             }
         
             .fa-circle-2 {
-                width: 5%;
-                height: 9.8%;
-                margin-top: 168px;
+                width: 4%;
+                height: 8.5%;
+                margin-top: 10.7em;
+                margin-left: 23px;
                
             }
         
             .fa-circle-3 {
-                width: 5%;
-                height: 9.8%;
-                margin-top: 16.2em;  
+                width: 4%;
+                height: 8.5%;
+                margin-top: 18.5em;  
+                margin-left: 23px;
+            }
+            .fa-duotone {
+                 padding-left: 7px;
+                  
             }
  
         }

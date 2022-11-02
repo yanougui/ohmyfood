@@ -39,11 +39,22 @@
  
      
 }
+/*
+@media only screen and (max-width:463px) {
+    .footer {
+        
+        margin-top: 1em;
+         
+    }
 
+}
+*/
+ 
 
    /*medias queries verstion tablette*/
 @media only screen and (min-width:992px) {
     .footer {
+        margin-top: 1px;
         padding-bottom: 10px;
         &_logo {
         

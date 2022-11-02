@@ -1,24 +1,28 @@
  
 .header{
-   width: 100%;
+   width: 120%;
    height: auto;
    position: relative;
    font-size: 15px;
    text-align: center;
+    margin-left: 0px;
+    
+   
    
     
       
    & img{
       padding: 15px;
-      width: 30%;
-      left: 30px;
+      width: 50%;
+       text-align: center;
+
       position: relative;
           
          
    }
    & i{
          top: 19px;
-         left: 9em;
+         left: 6em;
          position: absolute;
          color: black;
          font-weight: bold;
@@ -30,6 +34,7 @@
   
       
 }
+/*
 @media only screen and (max-width:463px) {
    .header {
        
@@ -49,10 +54,17 @@
    }
       
       
-}
+}*/
    /*les medias queries*/
 @media only screen and (min-width:763px) {
    .header{
+      width: 99.7%;
+      
+      & img {
+         width: 25%;
+         right: 20px;
+      
+      }
        
        
       & i {
@@ -67,11 +79,13 @@
 @media only screen and (min-width:992px) {
    .header{
        
-      
+      width: 100%;
+       
       
              
       & img {
-         left: 15px;
+         width: 25%;
+         right: 20px;
       
       }
             
