@@ -7,59 +7,31 @@ $colour-verte:#6be36b;
 $couleur-aime:#663399;
 $couleur-boutton:#DA70D6;
 $couleur-noir:#000000;
+$coleur-ver_fonce:#006400;
 
-$heading-shadow: 0 15px 10px -15px rgb(207, 205, 207);
-//box-shadox 
-
-$nav-box_shadox:inset 0 0 0em $couleur-fond, 0 0.2em 0.5em #D3D3D3;
-/* mise en page petit ecran*/
-//les bordures
-$bordure-solide: 1px solid;
-$bordur-contour:  20px;
-//taille des bouttons
-$taille-boutton: 3em;
-//la marge header
-$marge-header: 1em;
-$paddin-page: 1em;
-$marge-haut: 0.5em;
-
-//grande taille des images
-$width-image:1290px;
-$height-image:500px;
  
 
-//taille du border botom des titres
-$width-border_bottom: 26px;
+$bordur-contour: 20px;
 
-//la bordure des images
-$border-image:20px 20px 1px 1px;
 
-//la taille des inputs
-$width-input: 10%;
-$height-input:4.1%;
+$btn_background:linear-gradient(#ff79da, #9356dc);
+$btn_background_hover:linear-gradient(#ff79da, #ff79da, #9356dc);
+$btn_box-shadow:0px 5px 15px -10px;
+$btn_box-shadow_hover:0px 10px 25px -10px;
+
+$background-color_general:rgb(235, 235, 235);
+$background-color_checkbox: #99e2d0;
+
+
+$section_box-shadox:inset 0 5px 10px -10px;
+
+
+$width_cent:100%;
  
-//la taille des images format telephone
-$width-image_telephone: 330px;
-$height-image_telephone:200px;
-$width_taille_image:500px;
-$heigth_taille_image:200px;
+$width_menu_entree_plat_dessert :119%;
+$height_menu_entree_plat_dessert:45em;
 
+$border-raduis_article_image:20px 20px 1px 1px;
 
-//taille des image de la page d'accueil ordinateur
-$width-acceuil_ordi :300px;
-$height-accueil_ordi:200px;
-
-//la taille de la partie description du menu telephone
-$width-description_article_telephone:99%;
  
-
-//la largeureur du header
-$width-header:90%;
-$width-logo_header:99.92%;
-
-
- /*marge haute et marge bas des titre du menu*/
- $marge-top_menu: 2em;
- $marge-botom_menu: 2em;
-
  

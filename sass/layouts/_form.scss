@@ -1,49 +1,38 @@
   .form{
     &_btn{
         margin: auto;
-            width: fit-content;
-             background: linear-gradient(#ff79da, #9356dc);
-            box-shadow: 0px 5px 15px -10px;
-            border-radius: 30px;
-            padding: 19px;
-            margin-top: 10px;
-            font-size: 20px;
-            border: none;
-            margin-left: 8em;
-            color: #fff;
+        width: 55%;
+         background: $btn_background;
+         box-shadow: $btn_box-shadow;
+         border-radius: 30px;
+         padding: 10px;
+         margin-top: 45px;
+         font-size: 20px;
+         border: none;
+         margin-left: 77px;
+         color: $couleur-blanche;
+         font-style: normal;
     }
     &_btn:hover{
-        background: linear-gradient(#ff79da, #ff79da, #9356dc);
-        box-shadow: 0px 10px 25px -10px;
-            transition: 0.2s;
-            cursor: pointer;
+        background: $btn_background_hover;
+        box-shadow:$btn_box-shadow_hover;
+        transition: 0.2s;
+        cursor: pointer;
     }
      
        
       
   }
-  /*
- @media only screen and (max-width:463px) {
-    .form {
-        
-    
-        &_btn {
-            margin-left: 4.5em;
-            margin-top: 50px;
-    
-        }
-    }
-
-
- }
- */
+   
 
   /*medias queries version tablette*/
  @media only screen and (min-width:763px) {
       .form{
          
         &_btn{
-            margin-left: 20em;
+            width: 22%;
+            margin-left: 15em;
+            
 
         }
     }
@@ -55,6 +44,7 @@
     .form {
 
         &_btn {
+            width: 12%;
             margin-left: 30em;
 
         }
@@ -63,58 +53,7 @@
 
 }
 
-     
-    /*
-    margin-top: -1.4em;
-     
-     
     
-      
-     &_villes {
-
-         margin: 0.2em;
-         padding: 2em;
-          
-         @include annimation;
-        @media (max-width:769px) {
-                
-                @include annimation_tablette;
-        
-        
-            }
- 
-
-         & select {
-             margin-left: 2em;
-             padding: 0.3em;
-
-             background-color: $couleur-fond;
-              
-             
-             @media (max-width:459px) {
-                & select{
-                    background-color: $couleur-fond;
-                     
-                     
-                     
-                }
-                
-             }
-
-         }
-              
-
-         & select:hover {
-             background-color: $premier-couleur;
-             cursor: pointer;
-             visibility: visible;
-
-         }
-        
-     }
-      */
-
-
  
   
  

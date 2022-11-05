@@ -1,14 +1,20 @@
 .footer{
-    width: 100%;
+    width: $width_cent;
     height: auto;
     background-color: rgb(50 50 50);
     position:relative;
-    color: white;
+    color: $couleur-blanche;
     margin-top: 0px;
     font-size: 16px;
+   
     &_logo{
         padding-top: 10px;
         margin: 0px 0 20px 25px;
+    }
+    & h1{
+        font-family:"Shrikhand", sans-serif ;
+        font-style: italic;
+         
     }
     
     &_menu_restau{
@@ -25,30 +31,21 @@
     &_active{
         text-decoration: none;
         margin-left: 32px;
-        color: #fff;
+        color: $couleur-blanche;
     }
     .fa-utensils{
         padding-right: 1em;
          
     }
-    .fa-handshake{
-        padding-right: 9px;
+    .fa-handshake-angle{
+        padding-right: 14px;
         
     }
 
  
      
 }
-/*
-@media only screen and (max-width:463px) {
-    .footer {
-        
-        margin-top: 1em;
-         
-    }
-
-}
-*/
+ 
  
 
    /*medias queries verstion tablette*/
@@ -78,7 +75,7 @@
         &_active {
             text-decoration: none;
             margin-left: 77px;
-            color: #fff;
+            color: $couleur-blanche;
        }
         
         .fa-utensils {

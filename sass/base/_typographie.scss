@@ -10,14 +10,17 @@ body {
 }
 h1{
     font-weight: bold;
-    font-family: "Shrikhand", sans-serif;
+    font-family: "Roboto",
+        sans-serif;
+     
 }
 
 h2, h4 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+   
     font-size: 1.4em;
-    font-style: italic;
+    font-family: "Roboto", sans-serif;
+     font-weight: bold;
+     font-style: normal;
 }
 p{
     font-size: 0.9em;

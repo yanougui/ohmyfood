@@ -1,11 +1,14 @@
  
 .header{
-   width: 120%;
+   width: $width_cent;
    height: auto;
    position: relative;
    font-size: 15px;
    text-align: center;
-    margin-left: 0px;
+   margin-left: 0px;
+     
+    
+    
     
    
    
@@ -13,56 +16,46 @@
       
    & img{
       padding: 15px;
-      width: 50%;
-       text-align: center;
-
+      width: 48%;
+      text-align: center;
+      margin-left: 10px;
       position: relative;
+       
+       
           
          
    }
    & i{
-         top: 19px;
-         left: 6em;
+         top: 10px;
+         left: 2em;
          position: absolute;
-         color: black;
+         color:$couleur-noir;
          font-weight: bold;
          width: 6%;
          padding: 10px;
           
          
       }
+      i::before{
+       
+         font-size: 20px;
+      }
   
       
 }
-/*
-@media only screen and (max-width:463px) {
-   .header {
-       
-          
-      & img {
-         width: 50%;
-         left: 8px;
-         position: relative;
-         
-      }
-      & i {
-         top:13px;
-          left: 2em;
-      
-       }
-      
-   }
-      
-      
-}*/
+ 
    /*les medias queries*/
 @media only screen and (min-width:763px) {
    .header{
-      width: 99.7%;
+      width: 99.8%;
+       
+      
+       
       
       & img {
          width: 25%;
-         right: 20px;
+         right: 8px;
+          
       
       }
        
@@ -79,7 +72,10 @@
 @media only screen and (min-width:992px) {
    .header{
        
-      width: 100%;
+      width: $width_cent;
+     
+       
+       
        
       
              

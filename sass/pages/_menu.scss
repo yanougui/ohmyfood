@@ -1,44 +1,57 @@
 .menu{
-    width: 100%;
+    width:$width_cent;
     height: auto;
     position: relative;
     animation: appear 1s;
+     
     & h3 {
-        margin-left: -38px;
+        margin-left: -16px;
         margin-top: -17px;
+        font-size: 14px;
+         
        
     }
     & p{
-        margin-left: -38px;
-        margin-top: -3px;
+        margin-left: -16px;
+        margin-top: -2px;
+        font-size: 11px;
+        color: #808080;
+         
         
+        
+    }
+    & h2{
+        color: #808080;
     }
    
     
     & img{
-        width: 99%;
-        height: auto;
-        margin-left: 4px;
+        width: 99.8%;
+        height: 190px;
+        margin-left: 0px;
         margin:absolute;
         border-radius:  2px;
     }
      
     &_titre{
         margin-top: -10px;
-        margin-left: 20px;
+        margin-left: 9px;
+         
+        
        
          
          
     }
     &_nom{
-        width: 100%;
+        width:$width_cent;
         position: relative;
         margin-top: -0.8em;
+        
          
          
     }
     &_description{
-        width: 100%;
+        width:$width_cent;
         height: 160em;
         margin-left: 0px;
         text-align: left;
@@ -49,33 +62,48 @@
         position: relative;
          
         
+         
+        
 
         
         
         .fa-regular{
             color:none;
         }
+        
         .fa-regular:hover{
-            color:$premier-couleur
+            background-color: $premier-couleur;
+            color:$premier-couleur;
+            
+             
+        }
+        .fa-regular::before{
+            font-size: 25px;
         }
          
     }
     &_aime{
-        margin-left: 36em;
-        margin-top: -2em;
+        margin-left: 25em;
+        margin-top: -3em;
         cursor: pointer;
         
         
     }
-    &_aime:hover{
-        color: #ff79da;
-    }
+     
     .entree{
         animation: appear 1s;
-        width: 108%;
-        height: 45em;
-        margin-left: -20px;
-        margin-top: -14px;
+        width:$width_menu_entree_plat_dessert;
+        height:$height_menu_entree_plat_dessert;
+        margin-left: -30px;
+        margin-top: 0px;
+        position: relative;
+         
+
+         
+         
+        
+         
+         
         
          
          
@@ -89,22 +117,20 @@
             transition: .2s;
             animation: menu-annimation 2s;
              
+             
             
         }
         &_nos-entrees{
-            width: 90%;
-            height: 89px;
-            border-radius: 20px;
-            padding: 50px;
-            font-size: 15px;
-            position: relative;
-            margin-top: -10px;
-            margin: 21px;
+             @include menu_entree_plat_dessert;
+            margin-left: 9px;
+            margin-top: 10px;
             background-color: $couleur-blanche;
             transition: .2s;
             animation: menu-annimation 2s;
             overflow: hidden;
-            cursor: pointer;
+             
+             
+             
              
             
              
@@ -123,27 +149,19 @@
             position: absolute;
              
              
+             
         
         }
         & i{
-            width: 18%;
-            height: 100%;
-             margin-left: 19em;
-              position: absolute;
-              top: -0em;
-              padding: 24px;
-              border-radius: 1px 15px 15px 1px;
-              background-color: #99e2d0;
-              cursor: pointer;
+            @include menu_input;
+              background-color:$background-color_checkbox;
               opacity: 0;
              
-              
-             
-
-              
                
+          
                
         }
+        
                 .padding {
                     padding: 31px 20px 31px;
                     border-radius: 0px 15px 15px 0
@@ -206,13 +224,15 @@
         & i::before{
             position: absolute;
             top:49px;
-            margin-left: 27px;
-            color: #fff;
+            margin-left: 18px;
+            color:$couleur-blanche;
+            
         }
         & span{
-            margin-left: 14.5em;
+            margin-left: 13em;
             position: absolute;
-            margin-top: -1.9em;
+            margin-top: -25px;
+            
               
              
         }
@@ -224,10 +244,11 @@
 
 
     .plat{
-        width: 108%;
-        height: 43em;
+        width: $width_menu_entree_plat_dessert;
+        height: $height_menu_entree_plat_dessert;
         margin-top: 88px;
-        margin-left: -20px;
+        margin-left: -30px;
+        
         
         
            
@@ -242,23 +263,16 @@
 
         }
         &_nos-plat{
-            width: 90%;
-            height: 89px;
-            border-radius: 20px;
-            padding: 50px;
-            font-size: 15px;
-            position: relative;
             margin-top: 17px;
             background-color: $couleur-blanche;
-            margin-left: 20px;
             transition: .3s;
-            margin: 25px;
             animation: menu-annimation 6s;
-            cursor: pointer;
+            margin-left: 20px;
              
+            @include menu_entree_plat_dessert;
             
         
-            }
+        }
 
         
             & input {
@@ -269,19 +283,13 @@
             }
 
             & i {
-                width: 18%;
-                height: 100%;
-                margin-left: 19.5em;
-                position: absolute;
-                top: -0em;
-                padding: 24px;
-                border-radius: 1px 15px 15px 1px;
-                background-color: #99e2d0;
+                @include menu_input;
+                background-color:$background-color_checkbox;
                 opacity: 0;
-                }
+            }
             .padding{
                 padding: 31px 20px 31px;
-                border-radius: 0px 15px 15px 0
+                border-radius: 0px 15px 15px 0;
             }
             .center{
                 position: absolute;
@@ -325,20 +333,20 @@
             &_nos-plat:not(:hover)p,
             &_nos-plat:not(:hover)h3{
                 animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation: uncut 0.5s;
+                -webkit-animation-timing-function: ease-in-out;
+                animation: uncut 0.5s;
             }
             
             & i::before {
                  position: absolute;
-                top: 49px;
-                margin-left: 27px;
-                 color: #fff;
+                top: 45px;
+                margin-left: 18px;
+                 color: $couleur-blanche;
                 }
             & span {
-                margin-left: 14.5em;
+                margin-left: 13em;
                 position: absolute;
-                margin-top: -1.9em;
+                margin-top: -25px;
                                  
                 }
 
@@ -350,10 +358,12 @@
 
 
     .dessert{
-        width: 108%;
-        height: 45em;
-        margin-left: -15px;
+        width: $width_menu_entree_plat_dessert;
+        height: $height_menu_entree_plat_dessert;
+        margin-left: -29px;
         margin-top: 80px;
+       
+         
              
         
         &_les-dessert{
@@ -368,19 +378,13 @@
               
         }
         &_nos-dessert {
-            width: 90%;
-            height: 89px;
-            border-radius: 20px;
-            padding: 50px;
-            font-size: 15px;
-            position: relative;
-            margin-top: 0px;
-            background-color: $couleur-blanche;
-            margin-left: 20px;
-            margin: 25px;
             transition: .3s;
             animation: menu-annimation 9s;
-            cursor: pointer;
+            background-color: $couleur-blanche;
+            margin-left: 20px;
+
+            @include menu_entree_plat_dessert;
+             
            
          
              
@@ -394,14 +398,8 @@
         
         }
         & i {
-            width: 18%;
-            height: 100%;
-            margin-left: 19.5em;
-            position: absolute;
-            top: -0em;
-            padding: 24px;
-            border-radius: 1px 15px 15px 1px;
-            background-color: #99e2d0;
+            @include menu_input;
+            background-color:$background-color_checkbox;
             opacity: 0;
         }
                 .padding {
@@ -464,225 +462,71 @@
             
         & i::before {
             position: absolute;
-            top: 49px;
-            margin-left: 27px;
-            color: #fff;
+            top: 45px;
+            margin-left: 18px;
+            color: $couleur-blanche;
         }
             
         & span {
-            margin-left: 14.5em;
+            margin-left: 13.3em;
             position: absolute;
-            margin-top: -1.9em;
+            margin-top: -25px;
         }
 
     }
 }
-
-/*
-  @media only screen and (max-width:463px) {
-      .menu {
-         
-
-          & h3,
-          p {
-              font-size: 10px;
-          }
-
-
-          & img {
-              width: 100%;
-              height: 250px;
-              left: -0.6em;
-              position: relative;
-          }
-
-          &_titre {
-              top: 20px;
-              left: -22px;
-              position: absolute;
-          }
-
-          &_nom {
-              width: 100%;
-              position: relative;
-              margin-top: -0.8em;
-              
-          }
-
-          &_description {
-              width: 100%;
-              height: 150em;
-              left: -0em;
-              position: relative;
-              background-color: yellow;
-          
-               
-              
-
-
-
-              .fa-regular {
-                  position: absolute;
-                  right: 3em;
-                  top: 25px;
-                  
-              }
-
-
-          }
-
-          .entree {
-              width: 119%;
-              margin-left: -29px;
-
-
-              &_lesEntrees {
-                  width: 20%;
-                  top: 25px;
-                  left: -22px;
-                  font-size: 18px;
-              }
-
-              &_nos-entrees {
-
-                  width: 90%;
-                  margin: 8px;
-                  top: 35px;
-                   
-              }
-
-              & i {
-                  margin-left: 11em;
-                  
-              }
-
-
-
-              & span {
-                  margin-left: 11em;
-                  position: absolute;
-                  margin-top: -1.6em;
-
-              }
-
-          }
-
-          .plat {
-              width: 119%;
-              margin-left: -28px;
-              margin-top: 19em;
-               
-               
-
-              &_leplat {
-                  width: 12%;
-                  top: 25px;
-                  left: -22px;
-                  font-size: 18px;
-
-              }
-
-              &_nos-plat {
-                  width: 90%;
-                  margin: 8px;
-                  top: 35px;
-                   
-              }
-
-              & i {
-                  margin-left: 11em;
-
-              }
-
-
-              & span {
-                  margin-left: 11em;
-                  position: absolute;
-                  margin-top: -1.6em;
-
-              }
-
-          }
-
-          .dessert {
-
-              width: 119%;
-              margin-left: -28px;
-              margin-top: 20em;
-
-              &_les-dessert {
-                  width: 15%;
-                  top: 25px;
-                  left: -22px;
-                  font-size: 18px;
-              }
-
-              &_nos-dessert {
-                  width: 90%;
-                  margin: 8px;
-                  top: 35px;
-
-              }
-
-              & i {
-                  margin-left: 11em;
-
-              }
-
-
-
-              & span {
-                  margin-left: 11.5em;
-                  position: absolute;
-                  margin-top: -1.6em;
-
-              }
-
-
-          }
-
-      }
-
-
-  }
-  */
-
+ 
 
 /*medias queries version tablette*/
  @media only screen and (min-width:763px) {
      .menu{
         
+        
         position: relative;
          & h3,
           p {
-              font-size: 12px;
+              font-size: 14px;
+               
+              
           }
+          
 
          
         & img {
-
-            margin-left: 4px;
+             width:$width_cent;
+             height: 290px;
+            margin-left: 0px;
         
             }
         
         &_description {
-            width: 100%;
+            width: $width_cent;
             height: 50%;
             margin-left: 0px;
+             
           
             
             
         }
+        &_titre{
+             margin-left: 85px;
+              
+              
+        }
         
         &_aime {
-            margin-left: 90em;
+            margin-left: 88em;
             margin-top: -2em;
+             
         }
           
        .entree{
              position: relative;
-             width: 99%;
+             width: 96%;
              height: 20%;
+             margin-left: 45px;
+             
+              
               
             &_lesEntrees {
                 width: 5%;
@@ -690,20 +534,36 @@
             }
             
             &_nos-entrees {
-                width: 40%;
+                width: 45%;
                 height: 90px;
                 display: inline-block;
                 margin-top: 17px;
                 margin: 20px;
                 
             }
+            & span {
+             margin-left: 16em;
+            
+            }
+            & i::before {
+                position: absolute;
+                top: 47px;
+                margin-left: 25px;
+                color: $couleur-blanche;
+                 
+            
+            }
 
         }
 
         .plat {
-            width: 99%;
+            width: 96%;
             height: 20%;
             margin-top: -2px;
+            margin-left: 45px;
+            
+             
+            
              
             &_leplat {
                 width: 4%;
@@ -711,29 +571,59 @@
                 }
             
             &_nos-plat {
-                width: 40%;
+                width: 45%;
                 height: 90px;
                 display: inline-block;
                 margin-top: 17px;
                 margin: 20px;
         
             }
+            & span {
+                 margin-left: 16em;
+            
+           }
+           & i::before {
+                position: absolute;
+                top: 47px;
+                margin-left: 25px;
+                color: $couleur-blanche;
+                
+        
+            }
+           
         }
         .dessert {
-            width: 99%;
+            width: 96%;
             height: 20%;
+            margin-left: 45px;
+            
+             
+            
              
             &_les-dessert {
                 width: 4%;
             }
             
             &_nos-dessert {
-                width: 40%;
+                width: 45%;
                 height: 90px;
                 display: inline-block;
                 margin-top: 17px;
                 margin: 20px;
-            }    
+                 
+            }   
+            & span {
+               margin-left: 16em;
+            
+            }
+            & i::before {
+                position: absolute;
+                top: 47px;
+                margin-left: 25px;
+                color: $couleur-blanche;
+                 
+            
+            }
         }
     }
 
@@ -744,20 +634,15 @@
 /*medias queris version orditeur*/
 @media only screen and (min-width:992px) {
     .menu{
+         
         & h3,
             p {
                 font-size: 15px;
             }
-        & span {
-             position: absolute;
-             margin-left: 30em;
-             margin-top: -28px;
-             
-             
-        }
+        
         
         & img{
-            width: 100%;
+            width:$width_cent;
             height: 450px;
             margin-left: 0;
             
@@ -766,23 +651,26 @@
         }
         &_titre {
             margin-top: -12px;
-            margin-left: 40px;
+            margin-left: 86px;
             font-size: 22px;
+             
         }
         
         &_nom {
-            width: 100%;
+            width:$width_cent;
             position: relative;
             margin-top: -0.8em;
+             
            
              
             }
         
         &_description {
-            width: 100%;
+            width: $width_cent;
             height: 99%;
             left: 0;
             position: relative;
+             
              
              
             
@@ -827,6 +715,12 @@
                 margin-left: 15em;
                 
             }
+            & span {
+                margin-left: 17.5em;
+                 position: absolute;
+                  
+            
+             }
            
         }
 
@@ -854,6 +748,12 @@
                 margin-left: 15em;
             
             }
+             & span {
+                margin-left: 17.5em;
+                 position: absolute;
+                 margin-top: -1.7em;
+                  
+             }
            
             
         }
@@ -881,7 +781,7 @@
                                 
             }
             & span {
-                 margin-left: 17em;
+                 margin-left: 17.5em;
                  position: absolute;
                  margin-top: -1.9em;
             }
