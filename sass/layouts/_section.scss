@@ -8,6 +8,9 @@
         text-align: center;
         background-color: $couleur-fond;
         box-shadow:$section_box-shadox;
+        & a{
+            color:$couleur-blanche;
+        }
          
     
       
@@ -35,9 +38,8 @@
         margin-top: 5px;
         background-color:$background-color_general;
         cursor: pointer;
-        font-family: "Shrikhand" sans-serif;
-        font-weight: bold;
-        color: $couleur-noir;
+        
+         
         
         
  

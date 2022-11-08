@@ -15,13 +15,13 @@
         margin-left: -16px;
         margin-top: -2px;
         font-size: 11px;
-        color: #808080;
+        color: $coleur-gris;
          
         
         
     }
     & h2{
-        color: #808080;
+        color:$coleur-gris;
     }
    
     
@@ -29,7 +29,6 @@
         width: 99.8%;
         height: 190px;
         margin-left: 0px;
-        margin:absolute;
         border-radius:  2px;
     }
      
@@ -63,17 +62,16 @@
          
         
          
-        
-
-        
-        
-        .fa-regular{
-            color:none;
-        }
+       
         
         .fa-regular:hover{
-            background-color: $premier-couleur;
-            color:$premier-couleur;
+            width: 7%;
+             height: 20px;
+             position: absolute;
+             border-radius: 50%;
+             background: $btn_background;
+            box-shadow: $btn_box-shadow;
+             
             
              
         }
@@ -121,7 +119,7 @@
             
         }
         &_nos-entrees{
-             @include menu_entree_plat_dessert;
+            @include menu_entree_plat_dessert;
             margin-left: 9px;
             margin-top: 10px;
             background-color: $couleur-blanche;
@@ -163,8 +161,8 @@
         }
         
                 .padding {
-                    padding: 31px 20px 31px;
-                    border-radius: 0px 15px 15px 0
+                    padding: $padding_menu;
+                    border-radius: $border-raduis_menu;
                 }
         
                 .center {
@@ -178,18 +176,14 @@
                 }
                 &_nos-entrees:hover .center {
                     animation: rotate 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                     @include nos_entrees_nosplats_nos_desser_hover-center;
                     opacity: 1;
         
                 }
         
                 &_nos-entrees:hover .padding {
                     animation: translate 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                 }
         
                 &_nos-entrees:hover p,
@@ -200,22 +194,17 @@
         
                 &_nos-entrees:not(:hover).center {
                     animation: rotate-out 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                 }
         
                 &_nos-entrees:not(:hover).padding {
                     animation: rotate-out 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                 }
         
                 &_nos-entrees:not(:hover)p,
                 &_nos-entrees:not(:hover)h3 {
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
+                     @include animation_menu_h3_p;
                     animation: uncut 0.5s;
                 }
 
@@ -268,7 +257,6 @@
             transition: .3s;
             animation: menu-annimation 6s;
             margin-left: 20px;
-             
             @include menu_entree_plat_dessert;
             
         
@@ -288,8 +276,8 @@
                 opacity: 0;
             }
             .padding{
-                padding: 31px 20px 31px;
-                border-radius: 0px 15px 15px 0;
+                padding: $padding_menu;
+                border-radius: $border-raduis_menu;
             }
             .center{
                 position: absolute;
@@ -302,17 +290,13 @@
             }
             &_nos-plat:hover .center{
                 animation: rotate 0.5s;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
+                @include nos_entrees_nosplats_nos_desser_hover-center;
                 opacity: 1;
                 
             }
             &_nos-plat:hover .padding{
                 animation: translate 0.5s;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
-                 animation-fill-mode: forwards;
+                @include nos_entrees_nosplats_nos_desser_hover-center;
             }
             &_nos-plat:hover p, &_nos-plat:hover h3{
                 animation: cut 0.5s;
@@ -320,29 +304,24 @@
             }
             &_nos-plat:not(:hover).center{
                 animation: rotate-out 0.5s;
-                animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
+                @include nos_entrees_nosplats_nos_desser_hover-center;
             }
             &_nos-plat:not(:hover).padding {
                  animation: rotate-out 0.5s;
-                 animation-timing-function: ease-in-out;
-                 -webkit-animation-timing-function: ease-in-out;
-                 animation-fill-mode: forwards;
+                @include nos_entrees_nosplats_nos_desser_hover-center;
             }
             &_nos-plat:not(:hover)p,
             &_nos-plat:not(:hover)h3{
-                animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
+                @include animation_menu_h3_p;
                 animation: uncut 0.5s;
             }
             
             & i::before {
-                 position: absolute;
+                position: absolute;
                 top: 45px;
                 margin-left: 18px;
-                 color: $couleur-blanche;
-                }
+                color: $couleur-blanche;
+            }
             & span {
                 margin-left: 13em;
                 position: absolute;
@@ -382,7 +361,6 @@
             animation: menu-annimation 9s;
             background-color: $couleur-blanche;
             margin-left: 20px;
-
             @include menu_entree_plat_dessert;
              
            
@@ -403,8 +381,8 @@
             opacity: 0;
         }
                 .padding {
-                    padding: 31px 20px 31px;
-                    border-radius: 0px 15px 15px 0
+                    padding: $padding_menu;
+                    border-radius: $border-raduis_menu;
                 }
         
                 .center {
@@ -418,18 +396,14 @@
                 }
                 &_nos-dessert:hover .center {
                     animation: rotate 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                     opacity: 1;
         
                 }
         
                 &_nos-dessert:hover .padding {
                     animation: translate 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                 }
         
                 &_nos-dessert:hover p,
@@ -440,22 +414,17 @@
         
                 &_nos-plat:not(:hover).center {
                     animation: rotate-out 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                 }
         
                 &_nos-dessert:not(:hover).padding {
                     animation: rotate-out 0.5s;
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
-                    animation-fill-mode: forwards;
+                    @include nos_entrees_nosplats_nos_desser_hover-center;
                 }
         
                 &_nos-dessert:not(:hover)p,
                 &_nos-dessert:not(:hover)h3 {
-                    animation-timing-function: ease-in-out;
-                    -webkit-animation-timing-function: ease-in-out;
+                    @include animation_menu_h3_p;
                     animation: uncut 0.5s;
                 }
 
@@ -493,11 +462,11 @@
 
          
         & img {
-             width:$width_cent;
-             height: 290px;
+            width:$width_cent;
+            height: 290px;
             margin-left: 0px;
         
-            }
+        }
         
         &_description {
             width: $width_cent;
@@ -507,6 +476,16 @@
           
             
             
+        }
+        .fa-regular:hover {
+             width: 25px;
+             height: 20px;
+             position: absolute;
+             border-radius: 50%;
+             background: $btn_background;
+             box-shadow: $btn_box-shadow;
+        
+        
         }
         &_titre{
              margin-left: 85px;
@@ -681,6 +660,17 @@
                 position: absolute;
                 right: 10em;
             }
+            .fa-regular:hover {
+                width: 25px;
+                height: 20px;
+                position: absolute;
+                border-radius: 50%;
+                background: $btn_background;
+                box-shadow: $btn_box-shadow;
+        
+        
+        
+            }
         
         
         }
@@ -695,7 +685,7 @@
         
             &_lesEntrees {
                 width: 5%;
-                 margin-top: 40px;
+                margin-top: 40px;
                 font-size: 18px;
                  
                 
@@ -717,7 +707,7 @@
             }
             & span {
                 margin-left: 17.5em;
-                 position: absolute;
+                position: absolute;
                   
             
              }

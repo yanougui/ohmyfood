@@ -48,6 +48,18 @@
     cursor: pointer;
     
 }
+//menu
+@mixin nos_entrees_nosplats_nos_desser_hover-center  {
+     
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+@mixin animation_menu_h3_p {
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
 
 
 
@@ -66,7 +78,7 @@
 
     }
 }
-//
+ 
  @keyframes rotate {
     0% {
         right: 0px;
