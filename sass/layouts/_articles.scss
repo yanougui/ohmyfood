@@ -4,16 +4,11 @@
     margin-top: 20px;
     margin-left: 0px;
     background-color: $couleur-fond;
-     
       
     &_titre{
         width: 50%;
         margin-left: 25px;
         padding-top: 45px;
-         
-        
-         
-      
     }
     .image{
         position: relative;
@@ -21,25 +16,17 @@
         width: $width_cent;
         margin-top: 15px;
         height: auto;
-         
-         
-      
-         
         & img{
             width: 95%;
             height: 190px;
             margin-left: 8px;
             border-radius:$border-raduis_article_image;
-             
-            
-             
-             
         }
          &_noveau{
             position: absolute;
             width: 27%;
             height: 12%;
-            left: 230px;
+            left: 222px;
             top: 22px;
             padding: 0px;
             border-radius: 3px;
@@ -47,10 +34,6 @@
             font-size: 20px;
             color:$coleur-ver_fonce;
             background-color:$background-color_checkbox;
-            
-             
-            
-      
         }
         .description {
             width: 96%;
@@ -68,47 +51,50 @@
             font-family: "Shrikhand", sans-serif;
             font-weight: bold;
             font-style: normal;
-             
-             
-            
-             
-             
-             
             &_titre{
                 width: 70%;
                 height: auto;
                 padding-left: 10px;
                 position: relative;
-               font-family: "Roboto", sans-serif;
-               font-weight: bold;
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
                
             }
             &_lieu{
                 padding-left: 12px;
                 font-weight: 100;
-                
-                
             }
-            .fa-regular{
-                position: absolute;
-                top: 10px;
-                left: 15em;
-                right: 0px;
-                cursor: pointer; 
-                 
-                 
-                 
-            }
-            
            
-            .fa-regular:hover{
-                width: 5%;
-                height: 20%;
-                border-radius: 50%;
-                background: $btn_background;
-                box-shadow: $btn_box-shadow;
-                 
+            .fa-regular{
+                cursor: pointer;
                 
+            }
+
+            .fa-regular::before{
+               cursor: pointer;
+                position: absolute;
+                margin-top: -50px;
+                margin-left: 255px;
+            }
+            .fa-regular:hover{
+                
+                opacity: 0;
+            }
+            .fa-sharp {
+            
+              cursor: pointer;
+               opacity: 0;
+            }
+            .fa-sharp::before{
+                position: relative;
+                top: -36px;
+                left: 251px;
+                
+            }
+            .fa-sharp:hover{
+                opacity: 1;
+                color:$couleur-aime;
+                box-shadow:$deuxiem-couleur;
             }
                
         }
@@ -126,50 +112,27 @@
         margin-top: 45px;
         margin-left: 0px;
         width: $width_cent;
-         
-          
         &_titre {
             margin-left: 260px;
              
         }
-        .image {
-             
-             
-                                    
+        .image {                    
            & img {
                 width: 50%;
                 margin-left: 250px;
-                 
-                
-
             }
             &_noveau {
                 width: 11%;
-                 left: 30em;
+                left: 30em;
             }
             .description {
                 width: 50.4%;
                 margin-left: 15.5em;
-                 
-                
                
-                 
-                
-                
-                 
-                
-                                  
-                
-                .fa-regular {
-                    left: 27em;
-                }
-                .fa-regular:hover {
-                   width: 3%;
-                    height: 20%;
-                 
-                
-                
-                }
+            .fa-regular {
+                margin-left: 159px;
+            }
+               
             }
         }
     }
@@ -188,10 +151,6 @@
         flex-wrap: wrap;
         position: relative;
         margin-top: -17em;
-         
-       
-        
-
         &_titre {
         
            margin-left: 8em;
@@ -200,10 +159,7 @@
         .image {
             width: 50%;
             margin-top: 2em;
-            margin-left: -2em;
-            
-            
-                     
+            margin-left: -2em;    
             & img {
                 width: 60%;
                 height: 250px;
@@ -216,26 +172,12 @@
                 left: 26em;
                  
             }
-        
             .description {
                 width: 60.6%;
                 margin-left: 11.4em;
-               
-                
-                
-                 
-                 
                 .fa-regular {
-                    left: 25em;
+                    margin-left: 129px;
                 }
-                .fa-regular:hover {
-                    width: 3.3%;
-                    height: 20%;
-            
-            
-            
-                }
-        
             }
         
         }

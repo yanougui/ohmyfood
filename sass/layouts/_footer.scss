@@ -16,7 +16,6 @@
         font-style: italic;
          
     }
-    
     &_menu_restau{
         margin-left: 30px;
          
@@ -41,12 +40,7 @@
         padding-right: 14px;
         
     }
-
- 
-     
 }
- 
- 
 
    /*medias queries verstion tablette*/
 @media only screen and (min-width:992px) {
@@ -54,34 +48,27 @@
         margin-top: 1px;
         padding-bottom: 10px;
         &_logo {
-        
          padding-left: 46px;
                 
         }
-        
         &_menu_restau {
             padding-left: 46px;
         }
-        
         &_menu_partenaire {
             padding-left: 46px;
         }
-        
         &_menu_mension {
             margin-left: 77px;
                  
         }
-        
         &_active {
             text-decoration: none;
             margin-left: 77px;
             color: $couleur-blanche;
        }
-        
         .fa-utensils {
             padding-right: 1em;
         }
-        
         .fa-handshake {
             padding-right: 9px;
         }

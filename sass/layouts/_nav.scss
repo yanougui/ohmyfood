@@ -5,19 +5,9 @@
     margin-top: 10px;
     font-size: 16px;
     position: relative;
-   
-     
-     
-    
-     
     &_titre{
         width: 50%;
         margin-left: 23px;
-         
-       
-        
-         
-         
     }
     .fonction{
         display: flex;
@@ -26,7 +16,6 @@
         margin-left: 0px;
         position: relative;
         font-size: 14px;
-        
         &_position{
             width: 98%;
             border-radius: $bordur-contour;
@@ -34,12 +23,6 @@
             margin: 10px;
             background-color:$background-color_general;
             box-shadow: 0 15px 10px -10px rgb(207, 205, 207);
-             
-             
-             
-             
-             
-                
         }
         .fa-circle-1{
             margin-top: 35px;
@@ -50,21 +33,16 @@
             margin-top: 135px;
             margin-left: 19px;
             @include nombre_nav;
-
-             
         }
         .fa-circle-3 {
             padding: 3px;
             margin-top: 17em;
             margin-left: 19px;
             @include nombre_nav;
-            
         }
         .fa-duotone{
             padding-left: 11px;
             font-style: normal;
-              
-             
         }
         .fa-solid{
             margin-right: 20px;
@@ -85,10 +63,7 @@
         }
         
     }
-
-     
 }
- 
 
 /*medias queries version tablette*/
  @media only screen and (min-width:763px) {
@@ -97,42 +72,30 @@
         height: 30em;
         margin-top: -10px;
         margin-left: 3px;
-         
-         
-          
         &_titre {
             margin-left: 248px;
         }
-        
         .fonction {
             width: 75%;
             font-size: 18px;
             margin-left: 220px;
-           
             &_position {
                 width: 59%;
                 padding:30px;
                 margin-top: -1px;
                 margin: 25px;
-                 
-                 
-                 
             }
-        
             .fa-circle-1 {
-                 @include nombre_nav_tablette;
+                @include nombre_nav_tablette;
                 margin-left: 23px;
                 margin-top: 54px;
                 
             }
-        
             .fa-circle-2 {
-                 @include nombre_nav_tablette;
+                @include nombre_nav_tablette;
                 margin-top: 10.7em;
                 margin-left: 23px;
-               
             }
-        
             .fa-circle-3 {
                 @include nombre_nav_tablette;
                 margin-top: 18.5em;  
@@ -140,28 +103,20 @@
             }
             .fa-duotone {
                 padding-left: 12px;
-                 
-                  
             }
  
         }
     }
 }
-
-
-
  /*medias queris version orditeur*/
  @media only screen and (min-width:992px) {
      .nav {
           width:$width_cent;
           margin-left: 0px;
           position: relative;
-          
-         
         &_titre {
            margin-left: 49px;
         }
-
         .fonction {
             font-size: 18px;
             width: 97%;
@@ -169,65 +124,36 @@
             display: flex;
             flex-direction: row;
             position: relative;
-            
-            
-             
-           
-             
-            
-            
             &_position {
-                
                 width: 99%;
                 height: 99px;
                 padding: 35px;
-               
-                 
-            
-          
             }
-            
-
             .fa-circle-1 {
                 @include nombre_nav_ordinateur;
                 left: -32px;
-                
-            
-
             }
-
             .fa-circle-2 {
                 @include nombre_nav_ordinateur;
                 left: 25.5em;
-                
-            
             }
-
             .fa-circle-3 {
                 @include nombre_nav_ordinateur;
-                left:53em ;
-                
+                left:53em ; 
             }
-            
             .fa-duotone {
                 position: absolute;
                 padding-top: 0px;
                 padding-left: 9px;
-                
-                 
             } 
-        
             .fa-solid {
                 margin-right: 10px;
                 
             }
-        
             & a {
-                 
                 margin-left:  0;
                 
             }
-    
 
         }
 

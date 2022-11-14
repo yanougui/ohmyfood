@@ -6,24 +6,12 @@
    font-size: 15px;
    text-align: center;
    margin-left: 0px;
-     
-    
-    
-    
-   
-   
-    
-      
    & img{
       padding: 15px;
       width: 48%;
       text-align: center;
       margin-left: 10px;
       position: relative;
-       
-       
-          
-         
    }
    & i{
          top: 10px;
@@ -36,27 +24,18 @@
           
          
       }
-      i::before{
-       
-         font-size: 20px;
-      }
-  
-      
+   i::before{
+      font-size: 20px;
+   }
 }
  
    /*les medias queries*/
 @media only screen and (min-width:763px) {
    .header{
       width: 99.8%;
-       
-      
-       
-      
       & img {
          width: 25%;
          right: 8px;
-          
-      
       }
        
        
@@ -73,12 +52,6 @@
    .header{
        
       width: $width_cent;
-     
-       
-       
-       
-      
-             
       & img {
          width: 25%;
          right: 20px;
@@ -86,8 +59,8 @@
       }
             
       & i {
-          left: 18em;
-          top: 27px;    
+         left: 18em;
+         top: 27px;    
       }
 
    }

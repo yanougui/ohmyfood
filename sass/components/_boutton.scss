@@ -1,10 +1,6 @@
-  
 
-  
  .localisation{
-     
-     
-     &_btn{
+    &_btn{
         margin: 140px;
         width: 57%;
         background: $btn_background;
@@ -15,25 +11,17 @@
         margin-top: 45px;
         font-size: 15px;
         color: $couleur-blanche;
-             
-     
      }
      &_btn:hover{
         background: $btn_background_hover;
          box-shadow:$btn_box-shadow_hover;
         transition: 0.2s;
         cursor: pointer;
-     }
-     
-      
+     } 
  }
-
-
 @media only screen and (min-width: 763px) {
     .localisation {
-         
         position: relative;
-
         &_btn {
             width: 22%;
             margin-left: 26em;

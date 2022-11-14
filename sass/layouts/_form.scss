@@ -2,16 +2,16 @@
     &_btn{
         margin: auto;
         width: 55%;
-         background: $btn_background;
-         box-shadow: $btn_box-shadow;
-         border-radius: 30px;
-         padding: 10px;
-         margin-top: 45px;
-         font-size: 20px;
-         border: none;
-         margin-left: 77px;
-         color: $couleur-blanche;
-         font-style: normal;
+        background: $btn_background;
+        box-shadow: $btn_box-shadow;
+        border-radius: 30px;
+        padding: 10px;
+        margin-top: 45px;
+        font-size: 20px;
+        border: none;
+        margin-left: 77px;
+        color: $couleur-blanche;
+        font-style: normal;
     }
     &_btn:hover{
         background: $btn_background_hover;
@@ -19,9 +19,6 @@
         transition: 0.2s;
         cursor: pointer;
     }
-     
-       
-      
   }
    
 
@@ -32,12 +29,9 @@
         &_btn{
             width: 22%;
             margin-left: 15em;
-            
 
         }
     }
-
-
 }
 
 @media only screen and (min-width:992px) {

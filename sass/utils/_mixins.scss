@@ -1,27 +1,23 @@
 @mixin nombre_nav {
     position: absolute;
-        width: 10%;
-        height: 10.5%;
-       border-radius: $bordur-contour;
-        padding: 3px;
-        background-color: $premier-couleur;
-        color: $couleur-blanche;
-    
+    width: 10%;
+    height: 10.5%;
+    border-radius: $bordur-contour;
+    padding: 3px;
+    background-color: $premier-couleur;
+    color: $couleur-blanche;
 }
 @mixin nombre_nav_tablette {
     width: 5%;
-    height: 9%;
-    
+    height: 9%; 
 }
-
 @mixin nombre_nav_ordinateur {
-       width: 2%;
-        height: 20%;
-        margin-top: 59px;
-        padding-top: 0px;
-        left: 53em;
-        padding: 10px;
-    
+    width: 2%;
+    height: 20%;
+    margin-top: 59px;
+    padding-top: 0px;
+    left: 53em;
+    padding: 10px;
 }
 
 //menu
@@ -34,8 +30,6 @@
     position: relative;
     margin: 10px;
     cursor: pointer;
-     
-    
 }
 @mixin menu_input {
     width: 18%;
@@ -46,29 +40,22 @@
     padding: 24px;
     border-radius: 1px 15px 15px 1px;
     cursor: pointer;
-    
 }
 //menu
 @mixin nos_entrees_nosplats_nos_desser_hover-center  {
-     
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    
 }
 @mixin animation_menu_h3_p {
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
 }
-
-
-
 //annimation du menu
 @keyframes menu-annimation {
     from {
         transform: translateY(300px);
         opacity: 0;
-
 
     }
 
@@ -78,7 +65,6 @@
 
     }
 }
- 
  @keyframes rotate {
     0% {
         right: 0px;
@@ -92,8 +78,6 @@
         transform: rotate(0deg);
     }
 } 
-
- 
 @keyframes translate {
     0% {
         margin-right: -45px;
@@ -103,8 +87,6 @@
         margin-right: 0px;
     }
 }
-
-
 @keyframes cut {
     0% {
         width: 240px;
@@ -114,8 +96,6 @@
         width: 400px;
     }
 }
- 
-
 @keyframes rotate-out {
     0% {
         margin-right: -20px;
@@ -137,8 +117,6 @@
         margin-right: -45px;
     }
 }
- 
-
 @keyframes uncut {
     0% {
         width: 190px;

@@ -1,31 +1,27 @@
 .localisation{
-        width: 109%;
-        height: 350px;
-        padding-bottom: 26px;
-        position: relative;
-        font-size: 15px;
-        top: -29px;
-        text-align: center;
-        background-color: $couleur-fond;
-        box-shadow:$section_box-shadox;
-        & a{
-            color:$couleur-blanche;
-        }
-         
-    
-      
-         
+    width: 109%;
+    height: 350px;
+    padding-bottom: 26px;
+    position: relative;
+    font-size: 15px;
+    top: -29px;
+    text-align: center;
+    background-color: $couleur-fond;
+    box-shadow:$section_box-shadox;
+    & a{
+        color:$couleur-blanche;
+    }
     &_lieu{
-            width:$width_cent;
-            height:57px;
-            padding-left: 2.3em;
-            text-align: center;
-            position: relative;
-            margin-top: 20px;
-            padding: 11px;
-            background-color: $couleur-fond;
-            background-color:$background-color_general;
-            box-shadow:$section_box-shadox;
+        width:$width_cent;
+        height:57px;
+        padding-left: 2.3em;
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+        padding: 11px;
+        background-color: $couleur-fond;
+        background-color:$background-color_general;
+        box-shadow:$section_box-shadox;
     }
     & input {
         width:39%;
@@ -38,110 +34,72 @@
         margin-top: 5px;
         background-color:$background-color_general;
         cursor: pointer;
-        
-         
-        
-        
- 
     }
     & i {
         margin-right:9em;
-       
-         
-           
-       
-         
     }
     & i::before{
-         font-size: 18px;
+        font-size: 18px;
          
     }
     &_reservation {
-         max-width: 61%;
-         min-width: 50%;
-         height: auto;
-         font-size: 20px;
-         margin-left: 59px;
-         padding-top: 10px;
-         margin-top:10px;
-         line-height: 1.15;
-         font-style: inherit;
-        
-         
-         
-         
-          
-         
-        
-         
-                      
-    }
-        
+        max-width: 61%;
+        min-width: 50%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 59px;
+        padding-top: 10px;
+        margin-top:10px;
+        line-height: 1.15;
+        font-style: inherit;    
+    }  
     &_description {
-         max-width: 86%;
-         min-width: 60%;
-         height: auto;
-         font-size: 16px;
-         font-weight: 200;
-         line-height: 1.15;
-         margin-left: 15px;
-         padding-top: 20px;
-         
-          
-         
+        max-width: 86%;
+        min-width: 60%;
+        height: auto;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 1.15;
+        margin-left: 15px;
+        padding-top: 20px;
     }
 
 }
  
 /* version tablette*/
 @media only screen and (min-width:763px) {
-     .localisation {
+    .localisation {
         width:$width_cent;
          
         &_lieu{
             width: auto;
-            height: 5em;
-             
+            height: 5em; 
         }
-       
         & input {
             text-align: left;
             margin-left: -67px;
             padding-left: 8px;
             font-size: 18px;
-             
-            
-             
-            
         }
-        
         & i {
             position: absolute;
             top: 14px;
             left: 25.5em;
         }
-        
         &_reservation {
             font-size: 25px;
             margin-left: 195px;
             padding-top: 60px;
-            margin-top: -32px;
-             
-            
+            margin-top: -32px; 
         }
-        
         &_description {
             max-width: 45%;
             font-size: 16px;
             margin-left: 228px;
- 
-        
         }
     }
     
-    
 }
-
 
 //version ordinateur
 
@@ -151,47 +109,27 @@
         margin-top: -5px;
         &_lieu {
            height: 5em;
-            
-           
-            
-       
         }
         & input {
             text-align: left;
             margin-left: -160px;
             padding-left: 0px;
             font-size: 25px;
-           
-             
-        
         }
-        
         & i {
-             top: 19px;
-             left: 38em;
-              
+            top: 19px;
+            left: 38em; 
         }
         &_reservation {
             width:58px;
             margin-left: 10em;
             margin-top: -25px;
-            font-size: 35px;
-             
-            
-            
-            
-             
-             
+            font-size: 35px;    
         }
         &_description {
             width: 29%;
             font-size: 28px;
             margin-left: 10em;
-           
-             
-           
-           
-    
         }
     }
 

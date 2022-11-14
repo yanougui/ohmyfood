@@ -3,51 +3,34 @@
     height: auto;
     position: relative;
     animation: appear 1s;
-     
     & h3 {
         margin-left: -16px;
         margin-top: -17px;
-        font-size: 14px;
-         
-       
+        font-size: 14px;   
     }
     & p{
         margin-left: -16px;
         margin-top: -2px;
         font-size: 11px;
         color: $coleur-gris;
-         
-        
-        
     }
     & h2{
         color:$coleur-gris;
     }
-   
-    
     & img{
         width: 99.8%;
         height: 190px;
         margin-left: 0px;
         border-radius:  2px;
     }
-     
     &_titre{
         margin-top: -10px;
         margin-left: 9px;
-         
-        
-       
-         
-         
     }
     &_nom{
         width:$width_cent;
         position: relative;
-        margin-top: -0.8em;
-        
-         
-         
+        margin-top: -0.8em; 
     }
     &_description{
         width:$width_cent;
@@ -59,35 +42,36 @@
         background-color: $couleur-fond;
         margin-top: -3em;
         position: relative;
-         
-        
-         
-       
-        
-        .fa-regular:hover{
-            width: 7%;
-             height: 20px;
-             position: absolute;
-             border-radius: 50%;
-             background: $btn_background;
-            box-shadow: $btn_box-shadow;
-             
-            
-             
-        }
+        .fa-regular{
+            cursor: pointer;
+        } 
         .fa-regular::before{
-            font-size: 25px;
+            position: absolute;
+            margin-left: 259px;
+            margin-top: -45px;
+            font-size: 22px;
         }
+        .fa-regular:hover{
+            opacity: 0;
+             
+        }
+        .fa-sharp{
+            font-size: 22px;
+            cursor: pointer;  
+            opacity: 0;
+        }
+        .fa-sharp::before{
+            position: absolute;
+            margin-left: 257px;
+            margin-top: -45px;
+        }
+        .fa-sharp:hover{
+            opacity: 1;
+            box-shadow: $deuxiem-couleur;
+            color: $couleur-aime;
+        } 
          
-    }
-    &_aime{
-        margin-left: 25em;
-        margin-top: -3em;
-        cursor: pointer;
-        
-        
-    }
-     
+    } 
     .entree{
         animation: appear 1s;
         width:$width_menu_entree_plat_dessert;
@@ -95,17 +79,6 @@
         margin-left: -30px;
         margin-top: 0px;
         position: relative;
-         
-
-         
-         
-        
-         
-         
-        
-         
-         
-         
         &_lesEntrees{
             width: 8%;
             position: relative;
@@ -113,9 +86,7 @@
             border-bottom: 4px solid $colour-verte;
             margin-left: 40px;
             transition: .2s;
-            animation: menu-annimation 2s;
-             
-             
+            animation: menu-annimation 2s;  
             
         }
         &_nos-entrees{
@@ -125,91 +96,58 @@
             background-color: $couleur-blanche;
             transition: .2s;
             animation: menu-annimation 2s;
-            overflow: hidden;
-             
-             
-             
-             
-            
-             
-             
-             
-              
-             
-              
-              
-             
+            overflow: hidden; 
         }
-       
         & input{
             margin-left: 27em;
             margin-top: -1.9em;
             position: absolute;
-             
-             
-             
-        
         }
         & i{
             @include menu_input;
-              background-color:$background-color_checkbox;
-              opacity: 0;
-             
-               
-          
-               
+            background-color:$background-color_checkbox;
+            opacity: 0; 
         }
-        
-                .padding {
-                    padding: $padding_menu;
-                    border-radius: $border-raduis_menu;
-                }
-        
-                .center {
-                    position: absolute;
-                    right: 90em;
-                    margin-left: 0px;
-                    padding: 2.3em 0px;
-                    top: 0px;
-                    opacity: 0;
+        .padding {
+            padding: $padding_menu;
+            border-radius: $border-raduis_menu;
+        }
+        .center {
+            position: absolute;
+            right: 90em;
+            margin-left: 0px;
+            padding: 2.3em 0px;
+            top: 0px;
+            opacity: 0;
                      
-                }
-                &_nos-entrees:hover .center {
-                    animation: rotate 0.5s;
-                     @include nos_entrees_nosplats_nos_desser_hover-center;
-                    opacity: 1;
-        
-                }
-        
-                &_nos-entrees:hover .padding {
-                    animation: translate 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                }
-        
-                &_nos-entrees:hover p,
-                &_nos-entrees:hover h3 {
-                    animation: cut 0.5s;
-                    animation-fill-mode: forwards;
-                }
-        
-                &_nos-entrees:not(:hover).center {
-                    animation: rotate-out 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                }
-        
-                &_nos-entrees:not(:hover).padding {
-                    animation: rotate-out 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                }
-        
-                &_nos-entrees:not(:hover)p,
-                &_nos-entrees:not(:hover)h3 {
-                     @include animation_menu_h3_p;
-                    animation: uncut 0.5s;
-                }
-
-
-       
+        }
+        &_nos-entrees:hover .center {
+            animation: rotate 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+            opacity: 1;
+        }
+        &_nos-entrees:hover .padding {
+            animation: translate 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-entrees:hover p,
+        &_nos-entrees:hover h3 {
+            animation: cut 0.5s;
+            animation-fill-mode: forwards;
+        }
+        &_nos-entrees:not(:hover).center {
+            animation: rotate-out 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-entrees:not(:hover).padding {
+            animation: rotate-out 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-entrees:not(:hover)p,
+        &_nos-entrees:not(:hover)h3 {
+            @include animation_menu_h3_p;
+            animation: uncut 0.5s;
+        }
         & i::before{
             position: absolute;
             top:49px;
@@ -221,26 +159,14 @@
             margin-left: 13em;
             position: absolute;
             margin-top: -25px;
-            
-              
-             
         }
-        
        
     }
-
-
-
-
     .plat{
         width: $width_menu_entree_plat_dessert;
         height: $height_menu_entree_plat_dessert;
         margin-top: 88px;
         margin-left: -30px;
-        
-        
-        
-           
         &_leplat{
             width: 6%;
             position: relative;
@@ -258,93 +184,74 @@
             animation: menu-annimation 6s;
             margin-left: 20px;
             @include menu_entree_plat_dessert;
-            
         
         }
-
-        
-            & input {
-                margin-left: 27em;
-                margin-top: -1.9em;
-                position: absolute;
-        
+        & input {
+            margin-left: 27em;
+            margin-top: -1.9em;
+            position: absolute;
+        }
+        & i {
+            @include menu_input;
+            background-color:$background-color_checkbox;
+            opacity: 0;
+        }
+        .padding{
+            padding: $padding_menu;
+            border-radius: $border-raduis_menu;
+        }
+        .center{
+            position: absolute;
+            right: -11px;
+            margin-left: -0px;
+            padding: 2.3px 0px;
+            top: 0px;
+            opacity: 0;
+        }
+        &_nos-plat:hover .center{
+            animation: rotate 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+            opacity: 1;
+        }
+        &_nos-plat:hover .padding{
+            animation: translate 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-plat:hover p, &_nos-plat:hover h3{
+            animation: cut 0.5s;
+            animation-fill-mode: forwards;
+        }
+        &_nos-plat:not(:hover).center{
+            animation: rotate-out 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-plat:not(:hover).padding {
+            animation: rotate-out 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-plat:not(:hover)p,
+        &_nos-plat:not(:hover)h3{
+            @include animation_menu_h3_p;
+            animation: uncut 0.5s;
+        }
+        & i::before {
+            position: absolute;
+            top: 45px;
+            margin-left: 18px;
+            color: $couleur-blanche;
             }
-
-            & i {
-                @include menu_input;
-                background-color:$background-color_checkbox;
-                opacity: 0;
-            }
-            .padding{
-                padding: $padding_menu;
-                border-radius: $border-raduis_menu;
-            }
-            .center{
-                position: absolute;
-                right: -11px;
-                margin-left: -0px;
-                padding: 2.3px 0px;
-                top: 0px;
-                opacity: 0;
-                   
-            }
-            &_nos-plat:hover .center{
-                animation: rotate 0.5s;
-                @include nos_entrees_nosplats_nos_desser_hover-center;
-                opacity: 1;
-                
-            }
-            &_nos-plat:hover .padding{
-                animation: translate 0.5s;
-                @include nos_entrees_nosplats_nos_desser_hover-center;
-            }
-            &_nos-plat:hover p, &_nos-plat:hover h3{
-                animation: cut 0.5s;
-                animation-fill-mode: forwards;
-            }
-            &_nos-plat:not(:hover).center{
-                animation: rotate-out 0.5s;
-                @include nos_entrees_nosplats_nos_desser_hover-center;
-            }
-            &_nos-plat:not(:hover).padding {
-                 animation: rotate-out 0.5s;
-                @include nos_entrees_nosplats_nos_desser_hover-center;
-            }
-            &_nos-plat:not(:hover)p,
-            &_nos-plat:not(:hover)h3{
-                @include animation_menu_h3_p;
-                animation: uncut 0.5s;
-            }
-            
-            & i::before {
-                position: absolute;
-                top: 45px;
-                margin-left: 18px;
-                color: $couleur-blanche;
-            }
-            & span {
-                margin-left: 13em;
-                position: absolute;
-                margin-top: -25px;
-                                 
-                }
+        & span {
+            margin-left: 13em;
+            position: absolute;
+            margin-top: -25px;
+        }
 
     }
-
-
-
-
-
-
     .dessert{
         width: $width_menu_entree_plat_dessert;
         height: $height_menu_entree_plat_dessert;
         margin-left: -29px;
         margin-top: 80px;
-       
-         
-             
-        
         &_les-dessert{
             width: 9%;
             position: relative;
@@ -362,11 +269,6 @@
             background-color: $couleur-blanche;
             margin-left: 20px;
             @include menu_entree_plat_dessert;
-             
-           
-         
-             
-        
         }
             
         & input {
@@ -380,55 +282,45 @@
             background-color:$background-color_checkbox;
             opacity: 0;
         }
-                .padding {
-                    padding: $padding_menu;
-                    border-radius: $border-raduis_menu;
-                }
-        
-                .center {
-                    position: absolute;
-                    right: -11px;
-                    margin-left: -0px;
-                    padding: 2.3px 0px;
-                    top: 0px;
-                    opacity: 0;
-                   
-                }
-                &_nos-dessert:hover .center {
-                    animation: rotate 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                    opacity: 1;
-        
-                }
-        
-                &_nos-dessert:hover .padding {
-                    animation: translate 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                }
-        
-                &_nos-dessert:hover p,
-                &_nos-dessert:hover h3 {
-                    animation: cut 0.5s;
-                    animation-fill-mode: forwards;
-                }
-        
-                &_nos-plat:not(:hover).center {
-                    animation: rotate-out 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                }
-        
-                &_nos-dessert:not(:hover).padding {
-                    animation: rotate-out 0.5s;
-                    @include nos_entrees_nosplats_nos_desser_hover-center;
-                }
-        
-                &_nos-dessert:not(:hover)p,
-                &_nos-dessert:not(:hover)h3 {
-                    @include animation_menu_h3_p;
-                    animation: uncut 0.5s;
-                }
-
-            
+        .padding {
+            padding: $padding_menu;
+            border-radius: $border-raduis_menu;
+        }
+        .center {
+            position: absolute;
+            right: -11px;
+            margin-left: -0px;
+            padding: 2.3px 0px;
+            top: 0px;
+            opacity: 0;
+        }
+        &_nos-dessert:hover .center {
+            animation: rotate 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+            opacity: 1;
+        }
+        &_nos-dessert:hover .padding {
+            animation: translate 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-dessert:hover p,
+        &_nos-dessert:hover h3 {
+            animation: cut 0.5s;
+            animation-fill-mode: forwards;
+        }
+        &_nos-plat:not(:hover).center {
+            animation: rotate-out 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-dessert:not(:hover).padding {
+            animation: rotate-out 0.5s;
+            @include nos_entrees_nosplats_nos_desser_hover-center;
+        }
+        &_nos-dessert:not(:hover)p,
+        &_nos-dessert:not(:hover)h3 {
+            @include animation_menu_h3_p;
+            animation: uncut 0.5s;
+        } 
         & i::before {
             position: absolute;
             top: 45px;
@@ -444,81 +336,45 @@
 
     }
 }
- 
 
 /*medias queries version tablette*/
  @media only screen and (min-width:763px) {
      .menu{
-        
-        
         position: relative;
-         & h3,
-          p {
-              font-size: 14px;
-               
-              
-          }
-          
-
-         
+        & h3,p 
+        {
+            font-size: 14px;
+        }
         & img {
             width:$width_cent;
             height: 290px;
             margin-left: 0px;
-        
         }
-        
         &_description {
             width: $width_cent;
             height: 50%;
             margin-left: 0px;
-             
-          
-            
-            
         }
-        .fa-regular:hover {
-             width: 25px;
-             height: 20px;
-             position: absolute;
-             border-radius: 50%;
-             background: $btn_background;
-             box-shadow: $btn_box-shadow;
-        
-        
+        .fa-regular{
+            margin-left: 599px;
         }
         &_titre{
-             margin-left: 85px;
-              
-              
+            margin-left: 85px;     
         }
-        
-        &_aime {
-            margin-left: 88em;
-            margin-top: -2em;
-             
-        }
-          
        .entree{
-             position: relative;
-             width: 96%;
-             height: 20%;
-             margin-left: 45px;
-             
-              
-              
+            position: relative;
+            width: 96%;
+            height: 20%;
+            margin-left: 45px;
             &_lesEntrees {
-                width: 5%;
-                 
+                width: 5%;  
             }
-            
             &_nos-entrees {
                 width: 45%;
                 height: 90px;
                 display: inline-block;
                 margin-top: 17px;
-                margin: 20px;
-                
+                margin: 20px;  
             }
             & span {
              margin-left: 16em;
@@ -529,45 +385,32 @@
                 top: 47px;
                 margin-left: 25px;
                 color: $couleur-blanche;
-                 
-            
             }
 
         }
-
         .plat {
             width: 96%;
             height: 20%;
             margin-top: -2px;
             margin-left: 45px;
-            
-             
-            
-             
             &_leplat {
                 width: 4%;
-                            
-                }
-            
+            }
             &_nos-plat {
                 width: 45%;
                 height: 90px;
                 display: inline-block;
                 margin-top: 17px;
                 margin: 20px;
-        
             }
             & span {
-                 margin-left: 16em;
-            
+                margin-left: 16em;
            }
            & i::before {
                 position: absolute;
                 top: 47px;
                 margin-left: 25px;
                 color: $couleur-blanche;
-                
-        
             }
            
         }
@@ -575,21 +418,15 @@
             width: 96%;
             height: 20%;
             margin-left: 45px;
-            
-             
-            
-             
             &_les-dessert {
                 width: 4%;
             }
-            
             &_nos-dessert {
                 width: 45%;
                 height: 90px;
                 display: inline-block;
                 margin-top: 17px;
                 margin: 20px;
-                 
             }   
             & span {
                margin-left: 16em;
@@ -600,106 +437,57 @@
                 top: 47px;
                 margin-left: 25px;
                 color: $couleur-blanche;
-                 
-            
             }
         }
     }
-
-
 }
- 
 
 /*medias queris version orditeur*/
 @media only screen and (min-width:992px) {
     .menu{
          
-        & h3,
-            p {
-                font-size: 15px;
-            }
-        
-        
+        & h3,p
+        {
+           font-size: 15px;
+        }
         & img{
             width:$width_cent;
             height: 450px;
             margin-left: 0;
-            
-            
-
         }
         &_titre {
             margin-top: -12px;
             margin-left: 86px;
-            font-size: 22px;
-             
+            font-size: 22px; 
         }
-        
         &_nom {
             width:$width_cent;
             position: relative;
             margin-top: -0.8em;
-             
-           
-             
-            }
-        
+        }
         &_description {
             width: $width_cent;
             height: 99%;
             left: 0;
             position: relative;
-             
-             
-             
-            
-            
-        
-        
             .fa-regular {
-                position: absolute;
-                right: 10em;
+                margin-left: 73%;
+                margin-top: 40px;   
             }
-            .fa-regular:hover {
-                width: 25px;
-                height: 20px;
-                position: absolute;
-                border-radius: 50%;
-                background: $btn_background;
-                box-shadow: $btn_box-shadow;
-        
-        
-        
-            }
-        
-        
         }
-        
         .entree {
             width: auto;
             height: 20%;
             position: relative;
-             
-            
-            
-        
             &_lesEntrees {
                 width: 5%;
                 margin-top: 40px;
                 font-size: 18px;
-                 
-                
             }
-        
             &_nos-entrees {
                 width: 28%;
                 margin: 20px;
                 margin-top: 2em;
-                
-                 
-                
-             
-            
             } 
             & i {
                 margin-left: 15em;
@@ -708,62 +496,43 @@
             & span {
                 margin-left: 17.5em;
                 position: absolute;
-                  
-            
-             }
-           
+            }
         }
-
         .plat {
             width: auto;
             height: 12%;
             margin-top: 40px;
-             
             
             &_leplat {
                 width: 3%;
                 font-size: 18px;
-            
-                }
+            }
             &_nos-plat {
                 width: 28%;
                 margin: 29px;
-                 
-                
-            
-                }
-            
-                    
-            & i {
+            }                
+            & i{
                 margin-left: 15em;
             
             }
-             & span {
+            & span {
                 margin-left: 17.5em;
-                 position: absolute;
-                 margin-top: -1.7em;
-                  
-             }
-           
+                position: absolute;
+                margin-top: -1.7em;
+            }
             
         }
-
         .dessert {
             width: auto;
             height: 12%;
             margin-top: 109px;
-           
             &_les-dessert {
                 width: 5%;
                 font-size: 18px;
-            
             }
-            
             &_nos-dessert {
                 width: 28%;
                 margin: 29px;
-                
-            
             }
         
             & i {
@@ -771,12 +540,10 @@
                                 
             }
             & span {
-                 margin-left: 17.5em;
-                 position: absolute;
-                 margin-top: -1.9em;
+                margin-left: 17.5em;
+                position: absolute;
+                margin-top: -1.9em;
             }
-          
-            
         }
     }
 
