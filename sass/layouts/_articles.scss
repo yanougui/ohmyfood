@@ -88,13 +88,12 @@
             .fa-sharp::before{
                 position: relative;
                 top: -36px;
-                left: 251px;
-                
+                left: 251px; 
             }
             .fa-sharp:hover{
                 opacity: 1;
-                color:$couleur-aime;
-                box-shadow:$deuxiem-couleur;
+                color: $couleur-boutton;
+                 
             }
                
         }

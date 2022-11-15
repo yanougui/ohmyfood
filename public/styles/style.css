@@ -618,8 +618,7 @@ button {
 }
 .article .image .description .fa-sharp:hover {
   opacity: 1;
-  color: #663399;
-  box-shadow: #FF79DA;
+  color: #DA70D6;
 }
 
 /*medias queries version tablette*/
@@ -860,8 +859,7 @@ button {
 }
 .menu_description .fa-sharp:hover {
   opacity: 1;
-  box-shadow: #FF79DA;
-  color: #663399;
+  color: #DA70D6;
 }
 .menu .entree {
   animation: appear 1s;
