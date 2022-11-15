@@ -75,25 +75,28 @@
                 position: absolute;
                 margin-top: -50px;
                 margin-left: 255px;
+                
             }
             .fa-regular:hover{
                 
                 opacity: 0;
             }
             .fa-sharp {
-            
-              cursor: pointer;
+               cursor: pointer;
                opacity: 0;
+                
             }
             .fa-sharp::before{
                 position: relative;
                 top: -36px;
                 left: 251px; 
+                color: $couleur-boutton;
+                 
             }
             .fa-sharp:hover{
                 opacity: 1;
-                color: $couleur-boutton;
-                 
+                color: $couleur-aime;
+             
             }
                
         }
@@ -175,7 +178,7 @@
                 width: 60.6%;
                 margin-left: 11.4em;
                 .fa-regular {
-                    margin-left: 129px;
+                    margin-left: 128px;
                 }
             }
         
