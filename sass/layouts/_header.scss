@@ -30,7 +30,7 @@
 }
  
    /*les medias queries*/
-@media only screen and (min-width:763px) {
+@media only screen and (min-width:768px) {
    .header{
       width: 99.8%;
       & img {
@@ -50,7 +50,6 @@
    /*medias queris version orditeur*/
 @media only screen and (min-width:992px) {
    .header{
-       
       width: $width_cent;
       & img {
          width: 25%;

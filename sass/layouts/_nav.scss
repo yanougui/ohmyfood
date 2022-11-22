@@ -8,6 +8,7 @@
     &_titre{
         width: 50%;
         margin-left: 23px;
+        margin-top: -18px;
     }
     .fonction{
         display: flex;
@@ -66,7 +67,7 @@
 }
 
 /*medias queries version tablette*/
- @media only screen and (min-width:763px) {
+ @media only screen and (min-width:768px) {
      .nav {
         width: 99%;
         height: 30em;

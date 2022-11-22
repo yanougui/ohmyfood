@@ -1,6 +1,6 @@
 .localisation{
     width: 109%;
-    height: 350px;
+    height: 277px;
     padding-bottom: 26px;
     position: relative;
     font-size: 15px;
@@ -8,17 +8,18 @@
     text-align: center;
     background-color: $couleur-fond;
     box-shadow:$section_box-shadox;
+     
     & a{
         color:$couleur-blanche;
     }
     &_lieu{
         width:$width_cent;
-        height:57px;
+        height:43px;
         padding-left: 2.3em;
         text-align: center;
         position: relative;
-        margin-top: 20px;
-        padding: 11px;
+        margin-top: 18px;
+        padding: 10px;
         background-color: $couleur-fond;
         background-color:$background-color_general;
         box-shadow:$section_box-shadox;
@@ -67,13 +68,13 @@
 }
  
 /* version tablette*/
-@media only screen and (min-width:763px) {
+@media only screen and (min-width:768px) {
     .localisation {
         width:$width_cent;
          
         &_lieu{
             width: auto;
-            height: 5em; 
+            height: 4em; 
         }
         & input {
             text-align: left;
@@ -105,10 +106,11 @@
 
 @media only screen and (min-width:992px) {
     .localisation{
-         
         margin-top: -5px;
+        height: 320px;
         &_lieu {
-           height: 5em;
+           height: 4em;
+            
         }
         & input {
             text-align: left;

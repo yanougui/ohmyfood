@@ -1,21 +1,22 @@
  .article{
     width: 99.6%;
+    padding-bottom: 26px;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 39px;
     margin-left: 0px;
     background-color: $couleur-fond;
-      
     &_titre{
         width: 50%;
         margin-left: 25px;
-        padding-top: 45px;
+        padding-top: 30px;
     }
     .image{
         position: relative;
         padding: 10px;
         width: $width_cent;
-        margin-top: 15px;
+        margin-top: 0px;
         height: auto;
+        
         & img{
             width: 95%;
             height: 190px;
@@ -37,9 +38,9 @@
         }
         .description {
             width: 96%;
-            height: auto;
+            height:69px;
             margin-bottom: 15px;
-            margin-left: 6px;
+            margin-left: 7px;
             border: 2px solid $couleur-fond;
             margin-top: -10px;
             padding: 5px;
@@ -58,11 +59,14 @@
                 position: relative;
                 font-family: "Roboto", sans-serif;
                 font-weight: bold;
+                 
                
             }
             &_lieu{
                 padding-left: 12px;
                 font-weight: 100;
+                margin-top: -5px;
+                 
             }
            
             .fa-regular{
@@ -74,7 +78,7 @@
                cursor: pointer;
                 position: absolute;
                 margin-top: -50px;
-                margin-left: 255px;
+                margin-left: 258px;
                 
             }
             .fa-regular:hover{
@@ -89,7 +93,7 @@
             .fa-sharp::before{
                 position: relative;
                 top: -36px;
-                left: 251px; 
+                left: 255px; 
                 color: $couleur-boutton;
                  
             }
@@ -109,7 +113,7 @@
 
     /*medias queries version tablette*/
 
-@media only screen and (min-width:763px) {
+@media only screen and (min-width:768px) {
     .article{   
         margin-top: 45px;
         margin-left: 0px;

@@ -4,7 +4,8 @@
     background-color: rgb(50 50 50);
     position:relative;
     color: $couleur-blanche;
-    margin-top: 0px;
+    margin-top:0px;
+    padding-bottom: 15px;
     font-size: 16px;
    
     &_logo{
@@ -18,7 +19,7 @@
     }
     &_menu_restau{
         margin-left: 30px;
-         
+        margin-top: -13px;
     }
     &_menu_partenaire{
         margin-left: 30px;
