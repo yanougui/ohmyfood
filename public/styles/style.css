@@ -980,7 +980,7 @@ button {
 .menu_description .fa-regular::before {
   position: absolute;
   margin-left: 259px;
-  margin-top: -40px;
+  margin-top: -32px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -995,7 +995,7 @@ button {
 .menu_description .fa-sharp::before {
   position: absolute;
   margin-left: 256px;
-  margin-top: -40px;
+  margin-top: -32px;
   cursor: pointer;
 }
 .menu_description .fa-sharp:hover {
@@ -1465,7 +1465,8 @@ button {
   }
   .menu_description .fa-regular {
     margin-left: 73%;
-    margin-top: 40px;
+    margin-top: 15px;
+    cursor: pointer;
   }
   .menu .entree {
     width: auto;
@@ -1475,7 +1476,7 @@ button {
   }
   .menu .entree_lesEntrees {
     width: 5%;
-    margin-top: 40px;
+    margin-top: 59px;
     font-size: 18px;
   }
   .menu .entree_nos-entrees {
